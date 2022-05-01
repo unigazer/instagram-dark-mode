@@ -1,17 +1,16 @@
-/*
-== UserStyle ==
+/* ==UserStyle==
 @name         Instagram Dark Mode
+@description  A proper dark mode for Instagram web version
 @namespace    https://github.com/unigazer
-@version      1.0.0
-@decription   A proper dark mode for Instagram web version
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://github.com/unigazer/instagram-dark-mode/instagram.user.css
-@license      CC-BY-SA-4.0
-@var color linkColor "Link color" #0695FF
-== UserStyle ==
-*/
+@version      1.0.0
+@preprocessor stylus
+@var color    linkColor  "Link color"   #0695ff
+@var checkbox	animationToggle "Enable animations"	1
+==/UserStyle== */
 
 @-moz-document domain("instagram.com") {
   :root {
