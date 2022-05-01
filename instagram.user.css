@@ -1,0 +1,283 @@
+/*
+== UserStyle ==
+@name         Instagram Dark Mode
+@namespace    https://github.com/unigazer
+@version      1.0.0
+@decription   A proper dark mode for Instagram web version
+@author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
+@homepageURL  https://github.com/unigazer/instagram-dark-mode
+@supportURL   https://github.com/unigazer/instagram-dark-mode/issues
+@updateURL    https://github.com/unigazer/instagram-dark-mode/instagram.user.css
+@license      CC-BY-SA-4.0
+@var color linkColor "Link color" #0695FF
+== UserStyle ==
+*/
+
+@-moz-document domain("instagram.com") {
+  :root {
+    --brand-color: #2c358c;
+    --primary: #111;
+    --secondary: #1c1c1c;
+    --border-color: #2d2d2d;
+    --text-color: #bfbfbf;
+    --text-color-visited: #9f9f9f;
+  }
+
+  /* Navigation */
+  ._lz6s {
+    background-color: rgba(17, 17, 17, 0.5);
+    border-bottom: 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .x-Vyw {
+    background-color: var(--primary);
+  }
+
+  /* Logo and navigation actions */
+  .cq2ai .s4Iyt,
+  .XrOey ._8-yf5 {
+    filter: invert(1);
+  }
+
+  /* Search input */
+  input.DljaH,
+  .cTBqC {
+    background: var(--secondary);
+  }
+
+  ._01UL2,
+  .TOh1s {
+    background: var(--secondary);
+  }
+
+  .AvhYw {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+  }
+
+  /* Personal profile card */
+  a.gmFkV {
+    color: linkColor !important;
+    font-weight: 700;
+  }
+
+  /* Suggestions */
+  ._8UZ6e,
+  .HVWg4 {
+    background-color: var(--primary);
+  }
+
+  /* Main */
+  .UDpcu {
+    background-color: var(--secondary);
+    padding-bottom: 2rem;
+  }
+
+  /* Stories */
+  .VideM {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+  }
+
+  .h_uhZ {
+    color: var(--text-color);
+  }
+
+  /* Timeline */
+  .N2s2W {
+    background: var(--secondary);
+  }
+
+  /* Post */
+  ._8Rm4L,
+  ._1gNme .UE9AK {
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+  }
+
+  ._4lIW3,
+  ._4lIW3 span {
+    color: var(--text-color);
+  }
+
+  a.yWX7d._8A5w5 {
+    color: var(--text-color);
+  }
+
+  a.yWX7d._8A5w5:visited {
+    color: var(--text-color-visited);
+  }
+
+  .QBdPU ._4EzTm svg,
+  .ZQScA .QBdPU svg {
+    filter: invert(1);
+  }
+
+  /* Post hashtags, mentions, links */
+  ._7UhW9 a.notranslate,
+  a.xil3i,
+  .gtFbE {
+    color: linkColor;
+  }
+
+  /* Post Comments */
+  ._1gNme .cv3IO {
+    background-color: var(--primary);
+  }
+
+  ._7UhW9 ._7UhW9,
+  .se6yk {
+    color: var(--text-color);
+  }
+
+  a ._7UhW9 ._7UhW9 {
+    color: var(--text-color);
+    font-weight: 700;
+  }
+
+  .Slqrh button {
+    filter: invert(1);
+  }
+
+  /* Post Border */
+  ._8Rm4L {
+    border: 1px solid var(--primary);
+  }
+
+  .sH9wk {
+    border-top: 1px solid var(--secondary);
+  }
+
+  /* Focused post (opened) */
+  .JyscU .UE9AK,
+  .L_LMM.ePUX4 .Slqrh,
+  .JyscU.ePUX4 ._JgwE,
+  .JyscU.ePUX4 .eo2As,
+  .JiVIq .vwCYk {
+    background-color: var(--primary);
+  }
+
+  .bW6vo ._1XyCr {
+    background-color: transparent;
+  }
+
+  .JyscU .Slqrh,
+  .JyscU.ePUX4 .eo2As,
+  .JyscU.ePUX4 .UE9AK {
+    border: 0;
+  }
+
+  .JyscU.ePUX4 .EtaWk {
+    background-color: var(--secondary);
+  }
+
+  .XQXOT {
+    overflow-y: initial;
+  }
+
+  /* Profile page */
+  .KV-D4,
+  .g47SY,
+  ._32eiM,
+  .PJXu4 {
+    color: var(--text-color);
+  }
+
+  .tx0Md {
+    color: linkColor;
+  }
+
+  /* Conversations (Page) */
+  .oYYFH,
+  .t30g8,
+  .emXTk .vwCYk,
+  .-qQT3:hover,
+  .N9abW ._4EzTm:hover,
+  .g6RW6 {
+    background: var(--secondary);
+  }
+
+  .N9abW ._4EzTm,
+  .vwCYk .nGS-Y,
+  .S-mcP,
+  ._7WGDw .N9abW,
+  .frMpI.-sxBV,
+  .HcJZg {
+    background-color: var(--primary);
+  }
+
+  .pV7Qt,
+  .CMoMH,
+  .X3a-9 {
+    border: 1px solid #3f3f3f;
+  }
+
+  .S-mcP {
+    border-bottom: 1px solid #3f3f3f;
+  }
+
+  .oNO81 {
+    border-right: 1px solid #3f3f3f;
+  }
+
+  a.k8Vux,
+  a.k8Vux:visited {
+    color: var(--text-color);
+  }
+
+  .KV-D4 a {
+    color: linkColor;
+  }
+
+  /* Footer */
+  footer.vfoLd {
+    background-color: var(--primary);
+  }
+
+  /* Global shadow on boxes */
+  ._lz6s,
+  .VideM,
+  ._8Rm4L,
+  ._8UZ6e,
+  ._01UL2 {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
+      rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
+  }
+
+  /* Dialog */
+  ._1XyCr {
+    background-color: var(--secondary);
+  }
+
+  .RnEpo {
+    backdrop-filter: blur(10px);
+  }
+
+  .TNiR1,
+  .HoLwm {
+    color: var(--text-color);
+  }
+
+  ._1XyCr button.wpO6b .QBdPU svg._8-yf5 {
+    filter: invert(1);
+  }
+
+  .eiUFA {
+    border: 0;
+  }
+
+  .aOOlW {
+    border-top: 1px solid #3f3f3f;
+  }
+
+  .W4P49 {
+    display: none;
+  }
+
+  /* Video fix */
+  video.tWeCl {
+    object-fit: cover;
+  }
+}
