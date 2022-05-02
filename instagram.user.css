@@ -5,13 +5,12 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@updateURL    https://github.com/unigazer/instagram-dark-mode/instagram.user.css
-@version      1.0.0
+@updateURL    https://userstyles.world/api/style/4465.user.css
+@version      1.0.1
 @preprocessor stylus
 @var color    linkColor  "Link color"   #0695ff
 @var checkbox	animationToggle "Enable animations"	1
 ==/UserStyle== */
-
 @-moz-document domain("instagram.com") {
   :root {
     --brand-color: #2c358c;
@@ -20,6 +19,11 @@
     --border-color: #2d2d2d;
     --text-color: #bfbfbf;
     --text-color-visited: #9f9f9f;
+  }
+
+  /* Main loader */
+  body {
+    background: var(--secondary) !important;
   }
 
   /* Navigation */
@@ -91,6 +95,11 @@
 
   .h_uhZ {
     color: var(--text-color);
+  }
+
+  /* Stories loader */
+  .vdqkn {
+    background: var(--secondary);
   }
 
   /* Timeline */
@@ -348,7 +357,7 @@
   .pV7Qt,
   .CMoMH,
   .X3a-9,
-  .qF0y9.Igw0E.IwRSH.eGOV_.ybXk5._4EzTm button {
+  .qF0y9.Igw0E.IwRSH.eGOV_.ybXk5._4EzTm button:not(.sqdOP.yWX7d.y3zKF) {
     border: 1px solid #3f3f3f;
   }
 
@@ -471,7 +480,8 @@
   .VideM,
   ._8Rm4L,
   ._8UZ6e,
-  ._01UL2 {
+  ._01UL2,
+  .GdeD6 {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
       rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
   }
@@ -504,6 +514,19 @@
 
   .W4P49 {
     display: none;
+  }
+
+  /* On username hover */
+  .DPiy6 {
+    background-color: var(--secondary);
+  }
+
+  .Dw_ki {
+    border-bottom: 1px solid #3f3f3f;
+  }
+
+  .qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm a {
+    color: linkColor;
   }
 
   /* Video fix */
