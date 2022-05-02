@@ -11,6 +11,7 @@
 @var color    linkColor  "Link color"   #0695ff
 @var checkbox	animationToggle "Enable animations"	1
 ==/UserStyle== */
+
 @-moz-document domain("instagram.com") {
   :root {
     --brand-color: #2c358c;
