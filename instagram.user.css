@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      1.0.3
+@version      1.0.4
 @preprocessor stylus
 @var color    linkColor  "Link color"   #0695ff
 @var checkbox	animationToggle "Enable animations"	1
