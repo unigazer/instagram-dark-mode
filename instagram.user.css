@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.0.0-beta
+@version      2.0.1-beta
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -20,6 +20,7 @@
 		--border-color: #2d2d2d;
 		--text-color: #bfbfbf;
 		--text-color-visited: #9f9f9f;
+		--border-color: #3f3f3f;
 	}
 
 	/* ======== General ========= */
@@ -40,6 +41,14 @@
 
 	._a3gq ._aam3 {
 		max-width: 35vw;
+	}
+
+	._a3gq ._ab6-[aria-label="Like"] {
+		fill: #ed4956;
+	}
+
+	svg[aria-label="Unlike"] {
+		filter: drop-shadow(0 0 10px #ed4956);
 	}
 
 	/* Video fix */
@@ -94,8 +103,13 @@
 		._a3gq ._ab6-[aria-label="Messenger"],
 		._a3gq ._ab6-[aria-label="New post"],
 		._a3gq ._ab6-[aria-label="Find People"],
-		._a3gq ._ab6-[aria-label="Activity Feed"] {
+		._a3gq ._ab6-[aria-label="Activity Feed"],
+		._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abbj > svg {
 			filter: invert(1);
+		}
+
+		._a3gq ._aa1g {
+			background-color: var(--border-color);
 		}
 
 		/* Notifications */
@@ -108,8 +122,8 @@
 		}
 
 		/* Search input */
-		input.DljaH,
-		.cTBqC {
+		input._aawh._aawj._aauy,
+		._a3gq ._aaw8 {
 			background: var(--secondary);
 			color: var(--text-color);
 		}
@@ -118,24 +132,10 @@
 			background: var(--secondary);
 		}
 
-		._01UL2,
-		.TOh1s {
-			background: var(--secondary);
-		}
-
-		.AvhYw {
-			background: var(--primary);
-			border: 1px solid var(--primary);
-		}
-
 		/* Suggestions */
 		._a3gq ._aak3,
 		._a3gq ._ab8q {
 			background-color: var(--primary);
-		}
-
-		.yWX7d {
-			color: linkColor;
 		}
 
 		/* Main */
@@ -165,11 +165,6 @@
 
 		/* Stories loader */
 		.vdqkn {
-			background: var(--secondary);
-		}
-
-		/* Timeline */
-		.N2s2W {
 			background: var(--secondary);
 		}
 
@@ -209,35 +204,14 @@
 		a._acao._acat,
 		a._acao._acat:visited {
 			color: linkColor;
-		}
-
-		a.yWX7d._8A5w5:visited {
-			color: var(--text-color-visited);
+			border: 0;
 		}
 
 		._ab8w._ab94._ab97._ab9h._ab9m._ab9p svg {
 			filter: invert(1);
 		}
 
-		.IjCL9.ijCUd {
-			position: relative;
-			z-index: 9999;
-			margin-top: 13px;
-		}
-
-		/* Post hashtags, mentions, links */
-		._7UhW9 a.notranslate,
-		a.xil3i,
-		.gtFbE {
-			color: linkColor;
-		}
-
 		/* Post Comments */
-		div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > section._aamu._aat0._aat1 > span._aamw > button > div > span > svg[aria-label="Unlike"] {
-			filter: drop-shadow(0 0 10px #ed4956);
-		}
-
-		._a3gq ._ab6-[aria-label="Like"],
 		._a3gq ._ab6-[aria-label="Comment"],
 		._a3gq ._ab6-[aria-label="Share Post"],
 		._a3gq ._ab6-[aria-label="Save"],
@@ -254,20 +228,12 @@
 			border: 1px solid var(--primary);
 		}
 
-		.sH9wk {
-			border-top: 1px solid var(--secondary);
-		}
-
 		/* Focused post (opened) */
 		._a3gq ._aatg ._aasw,
 		._a3gq ._aate._aati ._aat0,
 		._a3gq ._aatg._aati ._aaso,
 		._a3gq ._aate._aati ._aat4 {
 			background-color: var(--primary);
-		}
-
-		.bW6vo ._1XyCr {
-			background-color: transparent;
 		}
 
 		._a3gq ._aatg ._aasi,
@@ -278,7 +244,7 @@
 		}
 
 		._a3gq ._aaoe {
-			border-top: 1px solid #3f3f3f;
+			border-top: 1px solid var(--border-color);
 		}
 
 		._a3gq ._aatg._aati ._aat6 {
@@ -313,6 +279,16 @@
 			font-weight: 700;
 		}
 
+		._aa-z._aa--._a6hd > span > svg,
+		._aa-z._aa--._a6hd > div > svg {
+			filter: invert(1);
+		}
+
+		._aa-z._aa--._a6hd > span > span,
+		._aa-z._aa--._a6hd > div > span {
+			color: #fff;
+		}
+
 		._a3gq ._aacz,
 		._a3gq ._aaai,
 		._a3gq ._aak1,
@@ -320,16 +296,31 @@
 			color: linkColor;
 		}
 
-		.qF0y9.Igw0E.IwRSH.eGOV_.ybXk5.ui_ht.bPdm3 > div > a,
-		.qF0y9.Igw0E.IwRSH.eGOV_.ybXk5._4EzTm.bPdm3 > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5.vwCYk.soMvl.i0EQd > button,
-		.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm.soMvl > div > span > span._1OSdk > button {
-			border: 1px solid #3f3f3f;
+		._a3gq ._acat,
+		a._acat,
+		a._acat:visited {
+			border: 1px solid var(--border-color);
+			color: var(--text-color);
 		}
 
-		.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm.soMvl > div > span > span.vBF20._1OSdk > button > div > div > svg,
-		.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm.soMvl > div > span > span.mLCHD._1OSdk > button > div > span > svg,
-		.XBGH5 > div.VMs3J > button > div > svg {
-			fill: var(--text-color);
+		._a3gq ._aa-g {
+			border-top: 1px solid var(--border-color);
+		}
+
+		._a3gq ._aa__ {
+			background: var(--primary);
+			border: 1px solid var(--border-color);
+		}
+
+		._a3gq ._acj1 {
+			background: var(--secondary);
+			border: 1px solid var(--border-color);
+		}
+
+		._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
+		._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
+		._aa_n > button > div > svg[aria-label="Options"] {
+			filter: invert(1);
 		}
 
 		/* Conversations (Page) */
@@ -368,15 +359,15 @@
 		.NP414,
 		._41KYi,
 		.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm > div > div > div > ul > li > div > div > div .qF0y9.Igw0E.IwRSH.eGOV_.ybXk5._4EzTm button:not(.sqdOP.yWX7d.y3zKF) {
-			border: 1px solid #3f3f3f;
+			border: 1px solid var(--border-color);
 		}
 
 		.S-mcP {
-			border-bottom: 1px solid #3f3f3f;
+			border-bottom: 1px solid var(--border-color);
 		}
 
 		.oNO81 {
-			border-right: 1px solid #3f3f3f;
+			border-right: 1px solid var(--border-color);
 		}
 
 		a.k8Vux,
@@ -401,7 +392,7 @@
 		.BvMHM,
 		._6zPK7.PS7Gk {
 			background-color: var(--primary);
-			border: 1px solid #3f3f3f;
+			border: 1px solid var(--border-color);
 		}
 
 		.DPiy6.qF0y9.Igw0E.IwRSH.eGOV_.acqo5.vwCYk,
@@ -412,7 +403,7 @@
 
 		input.RO68f {
 			background-color: var(--secondary);
-			border: 1px solid #3f3f3f;
+			border: 1px solid var(--border-color);
 			color: var(--text-color);
 		}
 
@@ -425,7 +416,7 @@
 		.JLJ-B,
 		.p7vTm,
 		.F0B8Y {
-			border: 1px solid #3f3f3f;
+			border: 1px solid var(--border-color);
 		}
 
 		textarea.p7vTm {
@@ -433,7 +424,7 @@
 		}
 
 		ul.wW1cu {
-			border-right: 1px solid #3f3f3f;
+			border-right: 1px solid var(--border-color);
 		}
 
 		.-HRM- {
@@ -518,7 +509,7 @@
 		}
 
 		._a3gq ._a9-- {
-			border-top: 1px solid #3f3f3f;
+			border-top: 1px solid var(--border-color);
 		}
 
 		.W4P49 {
@@ -531,7 +522,7 @@
 		}
 
 		.Dw_ki {
-			border-bottom: 1px solid #3f3f3f;
+			border-bottom: 1px solid var(--border-color);
 		}
 
 		.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm a {
@@ -549,7 +540,7 @@
 		}
 
 		#react-root > section > main > div > div.ltEKP > article {
-			border: 1px solid #3f3f3f;
+			border: 1px solid var(--border-color);
 		}
 	}
 	else if theme==system {
@@ -574,8 +565,13 @@
 			._a3gq ._ab6-[aria-label="Messenger"],
 			._a3gq ._ab6-[aria-label="New post"],
 			._a3gq ._ab6-[aria-label="Find People"],
-			._a3gq ._ab6-[aria-label="Activity Feed"] {
+			._a3gq ._ab6-[aria-label="Activity Feed"],
+			._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abbj > svg {
 				filter: invert(1);
+			}
+
+			._a3gq ._aa1g {
+				background-color: var(--border-color);
 			}
 
 			/* Notifications */
@@ -583,25 +579,13 @@
 				background: var(--primary);
 			}
 
-			.uo5MA._2ciX.tWgj8.XWrBI > div._01UL2 > div > div > div > div > div > div.iTMfC > button {
-				border: 1px solid #3f3f3f;
-			}
-
-			.y3zKF:not(.yWX7d),
-			a.y3zKF:not(.yWX7d),
-			a.y3zKF:not(.yWX7d):visited {
-				background-color: linkColor;
-			}
-
-			.y3zKF:active:not(.yWX7d),
-			a.y3zKF:active:not(.yWX7d),
-			a.y3zKF:active:not(.yWX7d):visited {
-				background-color: rgba(linkColor, .75);
+			._a3gq ._aa62 {
+				background: none;
 			}
 
 			/* Search input */
-			input.DljaH,
-			.cTBqC {
+			input._aawh._aawj._aauy,
+			._a3gq ._aaw8 {
 				background: var(--secondary);
 				color: var(--text-color);
 			}
@@ -610,24 +594,10 @@
 				background: var(--secondary);
 			}
 
-			._01UL2,
-			.TOh1s {
-				background: var(--secondary);
-			}
-
-			.AvhYw {
-				background: var(--primary);
-				border: 1px solid var(--primary);
-			}
-
 			/* Suggestions */
 			._a3gq ._aak3,
 			._a3gq ._ab8q {
 				background-color: var(--primary);
-			}
-
-			.yWX7d {
-				color: linkColor;
 			}
 
 			/* Main */
@@ -651,13 +621,12 @@
 				color: linkColor;
 			}
 
-			/* Stories loader */
-			.vdqkn {
-				background: var(--secondary);
+			header > div._ab8w._ab94._ab97._ab9i._ab9k._ab9p {
+				background: transparent;
 			}
 
-			/* Timeline */
-			.N2s2W {
+			/* Stories loader */
+			.vdqkn {
 				background: var(--secondary);
 			}
 
@@ -697,35 +666,14 @@
 			a._acao._acat,
 			a._acao._acat:visited {
 				color: linkColor;
-			}
-
-			a.yWX7d._8A5w5:visited {
-				color: var(--text-color-visited);
+				border: 0;
 			}
 
 			._ab8w._ab94._ab97._ab9h._ab9m._ab9p svg {
 				filter: invert(1);
 			}
 
-			.IjCL9.ijCUd {
-				position: relative;
-				z-index: 9999;
-				margin-top: 13px;
-			}
-
-			/* Post hashtags, mentions, links */
-			._7UhW9 a.notranslate,
-			a.xil3i,
-			.gtFbE {
-				color: linkColor;
-			}
-
 			/* Post Comments */
-			div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > section._aamu._aat0._aat1 > span._aamw > button > div > span > svg[aria-label="Unlike"] {
-				filter: drop-shadow(0 0 10px #ed4956);
-			}
-
-			._a3gq ._ab6-[aria-label="Like"],
 			._a3gq ._ab6-[aria-label="Comment"],
 			._a3gq ._ab6-[aria-label="Share Post"],
 			._a3gq ._ab6-[aria-label="Save"],
@@ -742,35 +690,45 @@
 				border: 1px solid var(--primary);
 			}
 
-			.sH9wk {
-				border-top: 1px solid var(--secondary);
-			}
-
 			/* Focused post (opened) */
-			.JyscU .UE9AK,
-			.L_LMM.ePUX4 .Slqrh,
-			.JyscU.ePUX4 ._JgwE,
-			.JyscU.ePUX4 .eo2As,
-			.JiVIq .vwCYk {
+			._a3gq ._aatg ._aasw,
+			._a3gq ._aate._aati ._aat0,
+			._a3gq ._aatg._aati ._aaso,
+			._a3gq ._aate._aati ._aat4 {
 				background-color: var(--primary);
 			}
 
-			.bW6vo ._1XyCr {
-				background-color: transparent;
-			}
-
-			.JyscU .Slqrh,
-			.JyscU.ePUX4 .eo2As,
-			.JyscU.ePUX4 .UE9AK {
+			._a3gq ._aatg ._aasi,
+			._a3gq ._aatg ._aat0,
+			._a3gq ._aatg._aati ._aasi,
+			._a3gq ._aatg._aati ._aasx {
 				border: 0;
 			}
 
-			.JyscU.ePUX4 .EtaWk {
+			._a3gq ._aaoe {
+				border-top: 1px solid var(--border-color);
+			}
+
+			._a3gq ._aatg._aati ._aat6 {
 				background-color: var(--secondary);
 			}
 
-			.XQXOT {
-				overflow-y: initial;
+			article > div > div._aata > div > div > div._aasx > div._aat6 > ul > li > div > button > div > svg[aria-label="Load more comments"],
+			article > div > div._aata > div > div > div._aasx > section._aamu._aat0 > span._aamz > div > div > button > div > svg[aria-label="Remove"] {
+				filter: invert(1);
+			}
+
+			._a3gq ._aays {
+				color: var(--text-color);
+			}
+
+			/* Focused post (Loading) */
+			._a3gq ._aas5 {
+				background-color: var(--primary);
+			}
+
+			._a3gq ._aas8 {
+				background: var(--secondary);
 			}
 
 			/* Profile page */
@@ -783,6 +741,16 @@
 				font-weight: 700;
 			}
 
+			._aa-z._aa--._a6hd > span > svg,
+			._aa-z._aa--._a6hd > div > svg {
+				filter: invert(1);
+			}
+
+			._aa-z._aa--._a6hd > span > span,
+			._aa-z._aa--._a6hd > div > span {
+				color: #fff;
+			}
+
 			._a3gq ._aacz,
 			._a3gq ._aaai,
 			._a3gq ._aak1,
@@ -790,16 +758,31 @@
 				color: linkColor;
 			}
 
-			.qF0y9.Igw0E.IwRSH.eGOV_.ybXk5.ui_ht.bPdm3 > div > a,
-			.qF0y9.Igw0E.IwRSH.eGOV_.ybXk5._4EzTm.bPdm3 > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5.vwCYk.soMvl.i0EQd > button,
-			.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm.soMvl > div > span > span._1OSdk > button {
-				border: 1px solid #3f3f3f;
+			._a3gq ._acat,
+			a._acat,
+			a._acat:visited {
+				border: 1px solid var(--border-color);
+				color: var(--text-color);
 			}
 
-			.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm.soMvl > div > span > span.vBF20._1OSdk > button > div > div > svg,
-			.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm.soMvl > div > span > span.mLCHD._1OSdk > button > div > span > svg,
-			.XBGH5 > div.VMs3J > button > div > svg {
-				fill: var(--text-color);
+			._a3gq ._aa-g {
+				border-top: 1px solid var(--border-color);
+			}
+
+			._a3gq ._aa__ {
+				background: var(--primary);
+				border: 1px solid var(--border-color);
+			}
+
+			._a3gq ._acj1 {
+				background: var(--secondary);
+				border: 1px solid var(--border-color);
+			}
+
+			._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
+			._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
+			._aa_n > button > div > svg[aria-label="Options"] {
+				filter: invert(1);
 			}
 
 			/* Conversations (Page) */
@@ -838,15 +821,15 @@
 			.NP414,
 			._41KYi,
 			.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm > div > div > div > ul > li > div > div > div .qF0y9.Igw0E.IwRSH.eGOV_.ybXk5._4EzTm button:not(.sqdOP.yWX7d.y3zKF) {
-				border: 1px solid #3f3f3f;
+				border: 1px solid var(--border-color);
 			}
 
 			.S-mcP {
-				border-bottom: 1px solid #3f3f3f;
+				border-bottom: 1px solid var(--border-color);
 			}
 
 			.oNO81 {
-				border-right: 1px solid #3f3f3f;
+				border-right: 1px solid var(--border-color);
 			}
 
 			a.k8Vux,
@@ -871,7 +854,7 @@
 			.BvMHM,
 			._6zPK7.PS7Gk {
 				background-color: var(--primary);
-				border: 1px solid #3f3f3f;
+				border: 1px solid var(--border-color);
 			}
 
 			.DPiy6.qF0y9.Igw0E.IwRSH.eGOV_.acqo5.vwCYk,
@@ -882,7 +865,7 @@
 
 			input.RO68f {
 				background-color: var(--secondary);
-				border: 1px solid #3f3f3f;
+				border: 1px solid var(--border-color);
 				color: var(--text-color);
 			}
 
@@ -895,7 +878,7 @@
 			.JLJ-B,
 			.p7vTm,
 			.F0B8Y {
-				border: 1px solid #3f3f3f;
+				border: 1px solid var(--border-color);
 			}
 
 			textarea.p7vTm {
@@ -903,7 +886,7 @@
 			}
 
 			ul.wW1cu {
-				border-right: 1px solid #3f3f3f;
+				border-right: 1px solid var(--border-color);
 			}
 
 			.-HRM- {
@@ -987,8 +970,8 @@
 				border: 0;
 			}
 
-			.aOOlW {
-				border-top: 1px solid #3f3f3f;
+			._a3gq ._a9-- {
+				border-top: 1px solid var(--border-color);
 			}
 
 			.W4P49 {
@@ -1001,7 +984,7 @@
 			}
 
 			.Dw_ki {
-				border-bottom: 1px solid #3f3f3f;
+				border-bottom: 1px solid var(--border-color);
 			}
 
 			.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm a {
@@ -1019,7 +1002,7 @@
 			}
 
 			#react-root > section > main > div > div.ltEKP > article {
-				border: 1px solid #3f3f3f;
+				border: 1px solid var(--border-color);
 			}
 		}
 		@media (prefers-color-scheme: light) {
