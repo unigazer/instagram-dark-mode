@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.0.1-beta
+@version      2.0.2-beta
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -86,8 +86,22 @@
 		/* Main loader */
 		body,
 		._a993._a995,
-		._acbh._acbi {
+		._acbh._acbi,
+		._a3gq ._ab6o {
 			background: var(--secondary) !important;
+		}
+
+		/* Content loader (Post) */
+		._a3gq ._aa26 {
+			background: var(--primary);
+		}
+
+		._a3gq ._aa2b {
+			background: var(--secondary);
+		}
+
+		._a3gq > section > main > section > ._aam1._aam2._aam3._aam5._aam6 > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abc0 > div {
+			border: 1px solid var(--border-color);
 		}
 
 		/* Navigation */
@@ -161,11 +175,6 @@
 
 		header > div._ab8w._ab94._ab97._ab9i._ab9k._ab9p {
 			background: transparent;
-		}
-
-		/* Stories loader */
-		.vdqkn {
-			background: var(--secondary);
 		}
 
 		/* Post */
@@ -324,22 +333,59 @@
 		}
 
 		/* Conversations (Page) */
-		.oYYFH,
-		.t30g8,
-		.emXTk .vwCYk,
-		.-qQT3:hover,
-		.N9abW ._4EzTm:hover,
-		.g6RW6 {
+		._a3gq ._a9-0,
+		._a3gq ._ab5z._ab5_,
+		div > section > div > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._aa5c > ._abyb > div,
+		._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div._ab8o._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div,
+		._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._ab8s._ab8w._ab94._ab99._ab9f._ab9m._ab9o > ._ab5w > div {
 			background: var(--secondary);
 		}
 
-		.N9abW ._4EzTm,
-		.vwCYk .nGS-Y,
-		.S-mcP,
-		._7WGDw .N9abW,
-		.frMpI.-sxBV,
-		.HcJZg {
+		._a3gq ._aa4j,
+		._a3gq ._abyk,
+		._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div > a,
+		._a3gq ._abac,
+		._a3gq ._abab,
+		._a3gq ._abaa {
 			background-color: var(--primary);
+		}
+
+		._a3gq ._ab8j,
+		._a3gq ._acrb,
+		._a3gq ._ac1r {
+			border: 1px solid var(--border-color);
+		}
+
+		._a3gq ._acdg {
+			border: 2px solid var(--border-color);
+		}
+
+		._a3gq ._aa4j,
+		._a3gq ._abye {
+			border-bottom: 1px solid var(--border-color);
+		}
+
+		._a3gq ._aa5c {
+			border-right: 1px solid var(--border-color);
+		}
+
+		a._abyd,
+		a._abyd:visited,
+		._a3gq ._acrb textarea {
+			color: var(--text-color);
+		}
+
+		svg[aria-label="Down chevron icon"],
+		svg[aria-label="New message"],
+		svg[aria-label="View Thread Details"],
+		svg[aria-label="Add Photo or Video"] {
+			filter: invert(1);
+		}
+
+		/* Conversations reactions */
+		._ab8w._ab94._ab99._ab9g._ab9m._ab9o > div > div > div > div._ac72 > div > div > div._acfk._acfl {
+			background: var(--secondary);
+			border: 2px solid var(--border-color);
 		}
 
 		/* Drodp-down suggestions */
@@ -548,8 +594,22 @@
 			/* Main loader */
 			body,
 			._a993._a995,
-			._acbh._acbi {
+			._acbh._acbi,
+			._a3gq ._ab6o {
 				background: var(--secondary) !important;
+			}
+
+			/* Content loader (Post) */
+			._a3gq ._aa26 {
+				background: var(--primary);
+			}
+
+			._a3gq ._aa2b {
+				background: var(--secondary);
+			}
+
+			._a3gq > section > main > section > ._aam1._aam2._aam3._aam5._aam6 > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abc0 > div {
+				border: 1px solid var(--border-color);
 			}
 
 			/* Navigation */
@@ -623,11 +683,6 @@
 
 			header > div._ab8w._ab94._ab97._ab9i._ab9k._ab9p {
 				background: transparent;
-			}
-
-			/* Stories loader */
-			.vdqkn {
-				background: var(--secondary);
 			}
 
 			/* Post */
@@ -786,22 +841,59 @@
 			}
 
 			/* Conversations (Page) */
-			.oYYFH,
-			.t30g8,
-			.emXTk .vwCYk,
-			.-qQT3:hover,
-			.N9abW ._4EzTm:hover,
-			.g6RW6 {
+			._a3gq ._a9-0,
+			._a3gq ._ab5z._ab5_,
+			div > section > div > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._aa5c > ._abyb > div,
+			._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div._ab8o._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div,
+			._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._ab8s._ab8w._ab94._ab99._ab9f._ab9m._ab9o > ._ab5w > div {
 				background: var(--secondary);
 			}
 
-			.N9abW ._4EzTm,
-			.vwCYk .nGS-Y,
-			.S-mcP,
-			._7WGDw .N9abW,
-			.frMpI.-sxBV,
-			.HcJZg {
+			._a3gq ._aa4j,
+			._a3gq ._abyk,
+			._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div > a,
+			._a3gq ._abac,
+			._a3gq ._abab,
+			._a3gq ._abaa {
 				background-color: var(--primary);
+			}
+
+			._a3gq ._ab8j,
+			._a3gq ._acrb,
+			._a3gq ._ac1r {
+				border: 1px solid var(--border-color);
+			}
+
+			._a3gq ._acdg {
+				border: 2px solid var(--border-color);
+			}
+
+			._a3gq ._aa4j,
+			._a3gq ._abye {
+				border-bottom: 1px solid var(--border-color);
+			}
+
+			._a3gq ._aa5c {
+				border-right: 1px solid var(--border-color);
+			}
+
+			a._abyd,
+			a._abyd:visited,
+			._a3gq ._acrb textarea {
+				color: var(--text-color);
+			}
+
+			svg[aria-label="Down chevron icon"],
+			svg[aria-label="New message"],
+			svg[aria-label="View Thread Details"],
+			svg[aria-label="Add Photo or Video"] {
+				filter: invert(1);
+			}
+
+			/* Conversations reactions */
+			._ab8w._ab94._ab99._ab9g._ab9m._ab9o > div > div > div > div._ac72 > div > div > div._acfk._acfl {
+				background: var(--secondary);
+				border: 2px solid var(--border-color);
 			}
 
 			/* Drodp-down suggestions */
