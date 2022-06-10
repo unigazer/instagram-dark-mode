@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.0.2-beta
+@version      2.0.3-beta
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -91,6 +91,15 @@
 			background: var(--secondary) !important;
 		}
 
+		/* New Posts (button) */
+		._a3gq ._a9-t {
+			background: var(--primary);
+			color: var(--text-color);
+			border: 1px solid var(--border-color);
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
+			rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
+		}
+
 		/* Content loader (Post) */
 		._a3gq ._aa26 {
 			background: var(--primary);
@@ -109,6 +118,8 @@
 			background-color: rgba(17, 17, 17, 0.5);
 			border-bottom: 0;
 			backdrop-filter: blur(10px);
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
+			rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
 		}
 
 		/* Logo and navigation actions */
@@ -534,7 +545,11 @@
 		}
 
 		/* Dialog */
-		._a9-v {
+		.qg4pu3sx {
+			background: var(--primary);
+		}
+		._a9-v,
+		._a3gq ._ac76 {
 			background-color: var(--secondary);
 		}
 
@@ -542,24 +557,22 @@
 			backdrop-filter: blur(10px);
 		}
 
-		._a3gq ._a9_1 {
+		._a3gq ._a9_1,
+		._a3gq ._ac7a {
 			color: var(--text-color);
 		}
 
-		._1XyCr button.wpO6b .QBdPU svg._8-yf5 {
+		._1XyCr button.wpO6b .QBdPU svg._8-yf5,
+		svg[aria-label="Close"] {
 			filter: invert(1);
 		}
 
-		.eiUFA {
-			border: 0;
+		._a3gq ._ac76 {
+			border-bottom: 1px solid var(--border-color);
 		}
 
 		._a3gq ._a9-- {
 			border-top: 1px solid var(--border-color);
-		}
-
-		.W4P49 {
-			display: none;
 		}
 
 		/* On username hover */
@@ -574,20 +587,6 @@
 		.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm a {
 			color: linkColor;
 		}
-
-		/* New post dialog */
-		#react-root > section > main > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm._7JkPY > div > button {
-			background: var(--primary);
-			color: var(--text-color);
-		}
-
-		#react-root > section > main > div > div.ltEKP > article > div > div._97aPb.wKWK0 {
-			background-color: var(--primary);
-		}
-
-		#react-root > section > main > div > div.ltEKP > article {
-			border: 1px solid var(--border-color);
-		}
 	}
 	else if theme==system {
 		@media (prefers-color-scheme: dark) {
@@ -597,6 +596,15 @@
 			._acbh._acbi,
 			._a3gq ._ab6o {
 				background: var(--secondary) !important;
+			}
+
+			/* New Posts (button) */
+			._a3gq ._a9-t {
+				background: var(--primary);
+				color: var(--text-color);
+				border: 1px solid var(--border-color);
+				box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
+				rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
 			}
 
 			/* Content loader (Post) */
@@ -617,6 +625,8 @@
 				background-color: rgba(17, 17, 17, 0.5);
 				border-bottom: 0;
 				backdrop-filter: blur(10px);
+				box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
+				rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
 			}
 
 			/* Logo and navigation actions */
@@ -1042,7 +1052,11 @@
 			}
 
 			/* Dialog */
-			._a9-v {
+			.qg4pu3sx {
+				background: var(--primary);
+			}
+			._a9-v,
+			._a3gq ._ac76 {
 				background-color: var(--secondary);
 			}
 
@@ -1050,24 +1064,22 @@
 				backdrop-filter: blur(10px);
 			}
 
-			._a3gq ._a9_1 {
+			._a3gq ._a9_1,
+			._a3gq ._ac7a {
 				color: var(--text-color);
 			}
 
-			._1XyCr button.wpO6b .QBdPU svg._8-yf5 {
+			._1XyCr button.wpO6b .QBdPU svg._8-yf5,
+			svg[aria-label="Close"] {
 				filter: invert(1);
 			}
 
-			.eiUFA {
-				border: 0;
+			._a3gq ._ac76 {
+				border-bottom: 1px solid var(--border-color);
 			}
 
 			._a3gq ._a9-- {
 				border-top: 1px solid var(--border-color);
-			}
-
-			.W4P49 {
-				display: none;
 			}
 
 			/* On username hover */
@@ -1081,20 +1093,6 @@
 
 			.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm a {
 				color: linkColor;
-			}
-
-			/* New post dialog */
-			#react-root > section > main > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm._7JkPY > div > button {
-				background: var(--primary);
-				color: var(--text-color);
-			}
-
-			#react-root > section > main > div > div.ltEKP > article > div > div._97aPb.wKWK0 {
-				background-color: var(--primary);
-			}
-
-			#react-root > section > main > div > div.ltEKP > article {
-				border: 1px solid var(--border-color);
 			}
 		}
 		@media (prefers-color-scheme: light) {
