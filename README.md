@@ -21,4 +21,4 @@ Sets the theme to "Dark" indefinitely. It will use the "Dark theme" all the time
 Sets the theme to "Light" indefinitely. It will use the "Light theme" all the time.
 
 ### System theme
-Sets the theme to the **system default theme**. What that means is that if your system uses the "Dark" theme, then the "Dark theme" will be applied, and vice versa.
+Sets the theme to the **system default theme**. What that means is that if your system uses the "Dark" theme, then the "Dark theme" will be applied, and vice versa. This is an ideal option if you want to **make the theme more dynamic**, to use the “Light theme” during the day, and use the “Dark theme” during the night.
