@@ -7,3 +7,18 @@ This will restore the Instagram layout to a normal state before the complete dis
 ## Preview
 
 ![image](https://userstyles.world/api/style/preview/4465.webp)
+
+## Available themes
+There are 3 options from which you can choose.
+  - Dark theme
+  - Light theme
+  - System theme
+
+### Dark theme
+Sets the theme to "Dark" indefinitely. It will use the "Dark theme" all the time.
+
+### Light theme
+Sets the theme to "Light" indefinitely. It will use the "Light theme" all the time.
+
+### System theme
+Sets the theme to the **system default theme**. What that means is that if your system uses the "Dark" theme, then the "Dark theme" will be applied, and vice versa.
