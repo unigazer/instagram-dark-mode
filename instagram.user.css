@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.0.6-beta
+@version      2.0.7-beta
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -292,7 +292,9 @@
 		}
 
 		/* Profile page */
-		._a3gq ._aacx {
+		._a3gq ._aacx,
+		._a3gq ._aa_u,
+		._a3gq ._a9zv {
 			color: var(--text-color);
 		}
 
@@ -329,7 +331,12 @@
 			border-top: 1px solid var(--border-color);
 		}
 
-		._a3gq ._aa__ {
+		._a3gq ._aa-h {
+			border-top: 0;
+		}
+
+		._a3gq ._aa__,
+		._a3gq ._aady {
 			background: var(--primary);
 			border: 1px solid var(--border-color);
 		}
@@ -339,10 +346,25 @@
 			border: 1px solid var(--border-color);
 		}
 
+		._a3gq ._aady {
+			margin-bottom: 1rem;
+		}
+
 		._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
 		._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
 		._aa_n > button > div > svg[aria-label="Options"] {
 			filter: invert(1);
+		}
+
+		._9zs0,
+		._a3gq ._aahn,
+		._a3gq ._aaho {
+			background-color: #fff;
+			filter: invert(1);
+		}
+
+		._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > div > ul > li > div > div > div > div {
+			background: var(--secondary);
 		}
 
 		/* Profile videos */
@@ -838,7 +860,9 @@
 			}
 
 			/* Profile page */
-			._a3gq ._aacx {
+			._a3gq ._aacx,
+			._a3gq ._aa_u,
+			._a3gq ._a9zv {
 				color: var(--text-color);
 			}
 
@@ -875,7 +899,12 @@
 				border-top: 1px solid var(--border-color);
 			}
 
-			._a3gq ._aa__ {
+			._a3gq ._aa-h {
+				border-top: 0;
+			}
+
+			._a3gq ._aa__,
+			._a3gq ._aady {
 				background: var(--primary);
 				border: 1px solid var(--border-color);
 			}
@@ -885,10 +914,25 @@
 				border: 1px solid var(--border-color);
 			}
 
+			._a3gq ._aady {
+				margin-bottom: 1rem;
+			}
+
 			._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
 			._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
 			._aa_n > button > div > svg[aria-label="Options"] {
 				filter: invert(1);
+			}
+
+			._9zs0,
+			._a3gq ._aahn,
+			._a3gq ._aaho {
+				background-color: #fff;
+				filter: invert(1);
+			}
+
+			._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > div > ul > li > div > div > div > div {
+				background: var(--secondary);
 			}
 
 			/* Profile videos */
