@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.1.1
+@version      2.2.0
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -117,7 +117,7 @@
     ._a3gq ._acum {
       background-color: rgba(17, 17, 17, 0.5);
       border-bottom: 0;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
       box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
       rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
     }
@@ -518,7 +518,7 @@
     }
     section._9eogI > nav > div._8MQSO.Cx7Bp > div {
       background: rgba(17, 17, 17, 0.5);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
       border: 0;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
       rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
@@ -648,7 +648,7 @@
     }
 
     .gs1a9yip.rq0escxv.j83agx80.cbu4d94t.buofh1pr.taijpn5t {
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
     }
 
     ._a3gq ._a9_1,
@@ -714,7 +714,7 @@
       ._a3gq ._acum {
         background-color: rgba(17, 17, 17, 0.5);
         border-bottom: 0;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
         box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
         rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
       }
@@ -1115,7 +1115,7 @@
       }
       section._9eogI > nav > div._8MQSO.Cx7Bp > div {
         background: rgba(17, 17, 17, 0.5);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
         border: 0;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
         rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
@@ -1245,7 +1245,7 @@
       }
 
       .gs1a9yip.rq0escxv.j83agx80.cbu4d94t.buofh1pr.taijpn5t {
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
       }
 
       ._a3gq ._a9_1,
@@ -1280,7 +1280,7 @@
       ._a3gq ._acum {
         background-color: rgba(255, 255, 255, .5);
         border-bottom: 0;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
       }
     }
   }
@@ -1289,7 +1289,7 @@
     ._a3gq ._acum {
       background-color: rgba(255, 255, 255, .5);
       border-bottom: 0;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
     }
   }
 }
