@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.3
+@version      2.2.4
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -76,6 +76,27 @@
 
       100% {
         opacity: 1;
+      }
+    }
+
+    ._aah4 {
+      animation: pulse-highlight 2s infinite;
+      border: 0;
+      width: 15px;
+      height: 15px;
+    }
+
+    @keyframes pulse-highlight {
+      0% {
+        box-shadow: 0 0 0 0 rgba(120, 222, 69, 0.4)
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px transparent
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 transparent
       }
     }
   }
