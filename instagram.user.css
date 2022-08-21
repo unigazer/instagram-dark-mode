@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.2
+@version      2.2.3
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -272,7 +272,6 @@
     /* Focused post (opened) */
     ._aatg ._aasi {
       background-color: var(--primary);
-
       border-bottom: 1px solid var(--border-color);
     }
 
@@ -424,39 +423,40 @@
     }
 
     /* Conversations (Page) */
-    ._a3gq ._a9-0,
-    ._a3gq ._ab5z._ab5_,
+    ._a9-0,
+    ._ab5z._ab5_,
     div > section > div > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._aa5c > ._abyb > div,
     ._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div._ab8o._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div,
     ._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._ab8s._ab8w._ab94._ab99._ab9f._ab9m._ab9o > ._ab5w > div {
       background: var(--secondary);
     }
 
-    ._a3gq ._aa4j,
-    ._a3gq ._abyk,
-    ._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div > a,
-    ._a3gq ._abac,
-    ._a3gq ._abab,
-    ._a3gq ._abaa {
+    ._aa4j,
+    ._abyk,
+    ._abac,
+    ._abab,
+    ._abaa,
+    ._ac1q,
+    ._ac1r {
       background-color: var(--primary);
     }
 
-    ._a3gq ._ab8j,
-    ._a3gq ._acrb,
-    ._a3gq ._ac1r {
+    ._ab8j,
+    ._acrb,
+    ._ac1r {
       border: 1px solid var(--border-color);
     }
 
-    ._a3gq ._acdg {
+    ._acdg {
       border: 2px solid var(--border-color);
     }
 
-    ._a3gq ._aa4j,
-    ._a3gq ._abye {
+    ._aa4j,
+    ._abye {
       border-bottom: 1px solid var(--border-color);
     }
 
-    ._a3gq ._aa5c {
+    ._aa5c {
       border-right: 1px solid var(--border-color);
     }
 
@@ -466,10 +466,22 @@
       color: var(--text-color);
     }
 
+    .Linkify > a {
+      color: linkColor;
+    }
+
     svg[aria-label="Down chevron icon"],
     svg[aria-label="New message"],
     svg[aria-label="View Thread Details"],
-    svg[aria-label="Add Photo or Video"] {
+    svg[aria-label="Add Photo or Video"],
+    svg[aria-label="Audio call"],
+    svg[aria-label="Video call"],
+    svg[aria-label="Missed audio call"],
+    svg[aria-label="Audio call started"],
+    svg[aria-label="Audio call ended"],
+    svg[aria-label="Missed video call"],
+    svg[aria-label="Video call started"],
+    svg[aria-label="Video call ended"] {
       filter: invert(1);
     }
 
@@ -889,7 +901,6 @@
       /* Focused post (opened) */
       ._aatg ._aasi {
         background-color: var(--primary);
-
         border-bottom: 1px solid var(--border-color);
       }
 
@@ -1041,39 +1052,40 @@
       }
 
       /* Conversations (Page) */
-      ._a3gq ._a9-0,
-      ._a3gq ._ab5z._ab5_,
+      ._a9-0,
+      ._ab5z._ab5_,
       div > section > div > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._aa5c > ._abyb > div,
       ._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div._ab8o._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div,
       ._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > div > ._ab8s._ab8w._ab94._ab99._ab9f._ab9m._ab9o > ._ab5w > div {
         background: var(--secondary);
       }
 
-      ._a3gq ._aa4j,
-      ._a3gq ._abyk,
-      ._aa5c > ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._ab9s > div > div > div > div > div > a,
-      ._a3gq ._abac,
-      ._a3gq ._abab,
-      ._a3gq ._abaa {
+      ._aa4j,
+      ._abyk,
+      ._abac,
+      ._abab,
+      ._abaa,
+      ._ac1q,
+      ._ac1r {
         background-color: var(--primary);
       }
 
-      ._a3gq ._ab8j,
-      ._a3gq ._acrb,
-      ._a3gq ._ac1r {
+      ._ab8j,
+      ._acrb,
+      ._ac1r {
         border: 1px solid var(--border-color);
       }
 
-      ._a3gq ._acdg {
+      ._acdg {
         border: 2px solid var(--border-color);
       }
 
-      ._a3gq ._aa4j,
-      ._a3gq ._abye {
+      ._aa4j,
+      ._abye {
         border-bottom: 1px solid var(--border-color);
       }
 
-      ._a3gq ._aa5c {
+      ._aa5c {
         border-right: 1px solid var(--border-color);
       }
 
@@ -1083,10 +1095,22 @@
         color: var(--text-color);
       }
 
+      .Linkify > a {
+        color: linkColor;
+      }
+
       svg[aria-label="Down chevron icon"],
       svg[aria-label="New message"],
       svg[aria-label="View Thread Details"],
-      svg[aria-label="Add Photo or Video"] {
+      svg[aria-label="Add Photo or Video"],
+      svg[aria-label="Audio call"],
+      svg[aria-label="Video call"],
+      svg[aria-label="Missed audio call"],
+      svg[aria-label="Audio call started"],
+      svg[aria-label="Audio call ended"],
+      svg[aria-label="Missed video call"],
+      svg[aria-label="Video call started"],
+      svg[aria-label="Video call ended"] {
         filter: invert(1);
       }
 
