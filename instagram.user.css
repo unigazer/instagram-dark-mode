@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.7
+@version      2.2.8
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -1395,7 +1395,7 @@
       background-color: rgba(255, 255, 255, 0.5);
       border-bottom: 0;
       backdrop-filter: blur(12px);
-      box-shadow: rgb(191, 191, 191, 0.2) 0px 6px 16px 0px,
+      box-shadow: rgba(191, 191, 191, 0.2) 0px 6px 16px 0px,
       rgba(191, 191, 191, 0.05) 0px 0px 4px 0px;
     }
   }
