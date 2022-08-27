@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.8
+@version      2.2.9
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -58,8 +58,8 @@
 
   /* Post animation */
   if (animationToggle) {
-    article._ab6k._ab6l._ab6m._aatb._aatc._aate._aatf._aati,
-    ._a3gq ._ac7v > *,
+    article._ab6k,
+    ._ac7v > *,
     ._ab70 {
       animation: fadeIn 300ms linear;
     }
