@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.10
+@version      2.2.11
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -243,7 +243,8 @@
     ._ac2a,
     body._a3wf,
     a._aaqk,
-    a._aaqk:visited {
+    a._aaqk:visited,
+    ._ac6f {
       color: var(--text-color);
     }
 
@@ -256,7 +257,9 @@
     ._aak1:visited,
     ._aak1:active,
     ._aak1:focus,
-    ._aak1:hover {
+    ._aak1:hover,
+    ._aaqn,
+    ._aaqn:visited {
       color: linkColor;
       border: 0;
     }
@@ -884,7 +887,8 @@
       ._ac2a,
       body._a3wf,
       a._aaqk,
-      a._aaqk:visited {
+      a._aaqk:visited,
+      ._ac6f {
         color: var(--text-color);
       }
 
@@ -897,7 +901,9 @@
       ._aak1:visited,
       ._aak1:active,
       ._aak1:focus,
-      ._aak1:hover {
+      ._aak1:hover,
+      ._aaqn,
+      ._aaqn:visited {
         color: linkColor;
         border: 0;
       }
