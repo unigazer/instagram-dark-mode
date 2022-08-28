@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.9
+@version      2.2.10
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -106,11 +106,10 @@
       background: var(--secondary) !important;
     }
 
-    /* New Posts (button) */
-    ._a3gq ._a9-t {
+    /* New Posts pop-up */
+    ._a9-r {
       background: var(--primary);
       color: var(--text-color);
-      border: 1px solid var(--border-color);
       box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
       rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
     }
@@ -139,6 +138,7 @@
 
     /* Logo and navigation actions */
     ._aagx > i,
+    ._aa61 svg,
     svg[aria-label="Home"],
     svg[aria-label="Messenger"],
     svg[aria-label="New post"],
@@ -747,11 +747,10 @@
         background: var(--secondary) !important;
       }
 
-      /* New Posts (button) */
-      ._a3gq ._a9-t {
+      /* New Posts pop-up */
+      ._a9-r {
         background: var(--primary);
         color: var(--text-color);
-        border: 1px solid var(--border-color);
         box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
         rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
       }
@@ -780,6 +779,7 @@
 
       /* Logo and navigation actions */
       ._aagx > i,
+      ._aa61 svg,
       svg[aria-label="Home"],
       svg[aria-label="Messenger"],
       svg[aria-label="New post"],
