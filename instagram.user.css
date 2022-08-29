@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.11
+@version      2.2.12
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -392,7 +392,7 @@
       color: var(--text-color);
     }
 
-    ._a3gq ._aa-g {
+    ._aa-g {
       border-top: 1px solid var(--border-color);
     }
 
@@ -400,30 +400,30 @@
       border-top: 0;
     }
 
-    ._a3gq ._aa__,
-    ._a3gq ._aady {
+    ._aa__,
+    ._aady {
       background: var(--primary);
       border: 1px solid var(--border-color);
     }
 
-    ._a3gq ._acj1 {
+    ._acj1 {
       background: var(--secondary);
       border: 1px solid var(--border-color);
     }
 
-    ._a3gq ._aady {
+    ._aady {
       margin-bottom: 1rem;
     }
 
-    ._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
-    ._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
+    section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
+    section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
     ._aa_n > button > div > svg[aria-label="Options"] {
       filter: invert(1);
     }
 
     ._9zs0,
-    ._a3gq ._aahn,
-    ._a3gq ._aaho {
+    ._aahn,
+    ._aaho {
       background-color: #fff;
       filter: invert(1);
     }
@@ -1036,7 +1036,7 @@
         color: var(--text-color);
       }
 
-      ._a3gq ._aa-g {
+      ._aa-g {
         border-top: 1px solid var(--border-color);
       }
 
@@ -1044,30 +1044,30 @@
         border-top: 0;
       }
 
-      ._a3gq ._aa__,
-      ._a3gq ._aady {
+      ._aa__,
+      ._aady {
         background: var(--primary);
         border: 1px solid var(--border-color);
       }
 
-      ._a3gq ._acj1 {
+      ._acj1 {
         background: var(--secondary);
         border: 1px solid var(--border-color);
       }
 
-      ._a3gq ._aady {
+      ._aady {
         margin-bottom: 1rem;
       }
 
-      ._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
-      ._a3gq > section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
+      section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahh > div,
+      section > main > div > div._aa__._ackf._ackh > div._ab8w._ab94._ab99._ab9f._ab9m._ab9p > div > button._a9_u._aahi > div,
       ._aa_n > button > div > svg[aria-label="Options"] {
         filter: invert(1);
       }
 
       ._9zs0,
-      ._a3gq ._aahn,
-      ._a3gq ._aaho {
+      ._aahn,
+      ._aaho {
         background-color: #fff;
         filter: invert(1);
       }
