@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      2.2.14
+@version      2.2.15
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -673,9 +673,7 @@
 		}
 
 		/* Footer */
-		footer._accr._acct._accu,
-		footer._accr._acct,
-		footer.vfoLd {
+		footer {
 			background-color: var(--primary);
 		}
 
@@ -1321,9 +1319,7 @@
 			}
 
 			/* Footer */
-			footer._accr._acct._accu,
-			footer._accr._acct,
-			footer.vfoLd {
+			footer {
 				background-color: var(--primary);
 			}
 
