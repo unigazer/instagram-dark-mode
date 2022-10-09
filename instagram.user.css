@@ -10,6 +10,7 @@
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
+@var checkbox	scrollbarToggle "Enable scrollbar overrides" 1
 @var select		theme "Theme" ["dark:Dark theme", "light:Light theme", "system:System theme"]
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
@@ -21,6 +22,30 @@
 		--text-color: #bfbfbf;
 		--text-color-visited: #9f9f9f;
 		--border-color: #3f3f3f;
+		--scrollbar-track: transparent;
+		--scrollbar-thumb: #5a5a5a;
+		--scrollbar-thumb-hover: #9f9f9f;
+	}
+	
+	if theme==light {
+		:root {
+			--primary: #fff;
+			
+			--scrollbar-track: transparent;
+			--scrollbar-thumb: #cecece;
+			--scrollbar-thumb-hover: #9f9f9f;
+		}
+	}
+	else if theme==system {
+		@media (prefers-color-scheme: light) {
+			:root {
+				--primary: #fff;
+
+				--scrollbar-track: transparent;
+				--scrollbar-thumb: #cecece;
+				--scrollbar-thumb-hover: #9f9f9f;
+			}
+		}
 	}
 
 	/* ======== General ========= */
@@ -1407,6 +1432,37 @@
 			backdrop-filter: blur(12px);
 			box-shadow: rgba(191, 191, 191, 0.2) 0px 6px 16px 0px,
 			rgba(191, 191, 191, 0.05) 0px 0px 4px 0px;
+		}
+	}
+	
+	/* ======== Scroll Bars ========= */
+	/*
+	 * ._abyk: DM User List Pane
+	 * ._ab5z: DM Message Pane
+	 */
+	if (scrollbarToggle) {
+		._abyk,
+		._ab5z,
+		body {
+			&::-webkit-scrollbar {
+				width: 10px;
+			}
+
+			&::-webkit-scrollbar-track {
+				background: var(--scrollbar-track);
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: var(--scrollbar-thumb);
+			}
+
+			&::-webkit-scrollbar-thumb:hover {
+				background: var(--scrollbar-thumb-hover);
+			}
+		}
+
+		._abyk::-webkit-scrollbar-track {
+			background: var(--primary);
 		}
 	}
 }
