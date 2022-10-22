@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.1
+@version      3.0.2
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -47,6 +47,15 @@
     }
   }
 
+  svg[aria-label="Like"] {
+    fill: #ed4956;
+  }
+
+  svg[aria-label="Unlike"] {
+    fill: #ed4956;
+    filter: drop-shadow(0 0 10px #ed4956);
+  }
+
   /* Layout (main) */
   ._aalx {
     margin-left: calc(100vw - 85vw);
@@ -79,15 +88,6 @@
     svg {
       fill: #fff;
       color: #fff;
-    }
-
-    svg[aria-label="Like"] {
-      fill: #ed4956;
-    }
-
-    svg[aria-label="Unlike"] {
-      fill: #ed4956;
-      filter: drop-shadow(0 0 10px #ed4956);
     }
 
     /* Sidebar */
@@ -141,6 +141,14 @@
     /* Timeline posts (comments) */
     ._ae1i {
       background-color: var(--darker);
+    }
+
+    article._ab6k section,
+    article._ab6k textarea {
+      background-color: var(--darker);
+      color: var(--text-color);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
     }
 
     /* Timeline posts (focused) */
