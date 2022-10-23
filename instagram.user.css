@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.2
+@version      3.0.3
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -22,7 +22,7 @@
   }
 
   /* General */
-  .x1n2onr6 {
+  .x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj {
     backdrop-filter: blur(12px);
   }
 
@@ -32,7 +32,8 @@
 
   if (animationToggle) {
     ._ab6k,
-    ._ab70 {
+    ._ab70,
+    ._aabd._aa8k._aanf {
       animation: fadeIn 300ms linear;
     }
 
@@ -91,16 +92,37 @@
     }
 
     /* Sidebar */
-    .x1o5hw5a.x1o5hw5a {
+    .x1o5hw5a.x1o5hw5a,
+    .xvb8j5 {
       background-color: var(--dark);
+    }
+
+    ._acan._acap._acat {
+      border: 2px solid var(--border-color);
+      color: var(--text-color);
     }
 
     .xvb8j5 {
       border-right: 1px solid var(--border-color);
     }
 
-    .x1l895ks:hover {
+    .x1xgvd2v,
+    .x1l895ks:hover,
+    ._acan._acap._acat {
       background-color: var(--darker);
+    }
+
+    .x1n2onr6,
+    ._aacw {
+      color: var(--text-color);
+    }
+
+    .xvs91rp {
+      color: linkColor;
+    }
+
+    hr.x11mr3az {
+      background-color: var(--border-color);
     }
 
     /* Stories timeline */
@@ -138,14 +160,22 @@
       border-bottom: none;
     }
 
-    /* Timeline posts (comments) */
-    ._ae1i {
-      background-color: var(--darker);
+    a._aaqk,
+    a._aaqk:visited {
+      color: linkColor;
     }
 
-    article._ab6k section,
-    article._ab6k textarea {
+    /* Timeline posts (comments) */
+    ._ae1i,
+    article._ab6k textarea,
+    ._ae2s._ae3v._ae3w > section._aaoe._ae5y._ae5z._ae62 > div > form > textarea,
+    section._aaoe._ae5y._ae5z._ae62,
+    ._aaoe._ae5y._ae5_._ae60._ae62 {
       background-color: var(--darker);
+      color: var(--text-color);
+    }
+
+    article._ab6k section {
       color: var(--text-color);
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
@@ -153,7 +183,8 @@
 
     /* Timeline posts (focused) */
     ._aatg ._aasi,
-    ._ae3w {
+    ._ae3w,
+    ._ae65 > div > ._ae1k._ae2q._ae2r {
       background-color: var(--dark);
     }
 
@@ -162,12 +193,17 @@
       border-bottom: 1px solid var(--border-color);
     }
 
-    ._ae5r {
+    ._ae5r,
+    ._ae1j {
       background-color: var(--dark);
     }
 
     ._ae47 {
       border-top: 1px solid var(--border-color);
+    }
+
+    ._aa6e ._aa6a {
+      border: 2px solid var(--border-color);
     }
 
     /* Personal profile card */
@@ -190,6 +226,31 @@
 
     ._aba7 {
       padding: 1rem;
+    }
+
+    /* Profile */
+    ._ab8w._ab94._ab99._ab9f._ab9k._ab9p._abcm > ._ab8w._ab94._ab99._ab9f._ab9k._ab9p._abcm button {
+      border: 2px solid var(--border-color);
+      color: var(--text-color);
+    }
+
+    ._ac2a {
+      color: var(--text-color);
+      font-weight: 700;
+    }
+
+    ._aaai,
+    ._aaai:visited {
+      color: linkColor;
+    }
+
+    .x1wzhzgj {
+      border-top: 1px solid var(--border-color);
+    }
+
+    a._aa--,
+    a._aa--:visited {
+      color: var(--text-color);
     }
 
     /* Dialog */
