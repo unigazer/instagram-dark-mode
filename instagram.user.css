@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.3
+@version      3.0.4
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -234,6 +234,14 @@
       color: var(--text-color);
     }
 
+    ._acas:not(._acao),
+    a._acas:not(._acao),
+    a._acas:not(._acao):visited,
+    ._acas:not(._acao) > div > div {
+      border: 1px solid transparent !important;
+      color: #fff !important;
+    }
+
     ._ac2a {
       color: var(--text-color);
       font-weight: 700;
@@ -254,11 +262,19 @@
     }
 
     /* Dialog */
-    .xxfnqb6 {
-      background-color: var(--dark);
-    }
+    .xxfnqb6,
     ._a9-z:only-child {
       background-color: var(--dark);
+    }
+
+    ._ad8j._aa5x._aa5-,
+    ._ad8j._aa5x._aa5- ._aa61,
+    ._ad8j._aa5x._aa5- ._aa62 {
+      background: var(--darker) !important;
+    }
+
+    ._ad8j._aa5x._aa5- ._abm4:hover {
+      background: var(--dark) !important;
     }
 
     ._a9_1 {
@@ -266,7 +282,9 @@
       border-top: 1px solid var(--border-color);
     }
 
-    ._a9-- {
+    ._a9--,
+    .x1fvbc88,
+    .xsgn9v4 {
       border-top: 1px solid var(--border-color);
     }
 
@@ -286,9 +304,13 @@
     /* Search input */
     ._aaw8,
     ._aauy,
-    ._aa61 {
-      background: var(--dark);
+    ._ad8j._ach4._aa5x._aa5y._aa5z ._aa61 {
+      background: var(--dark) !important;
       color: var(--text-color);
+    }
+
+    ._ad8j._ach4._aa5x._aa5y._aa5z ._aa62 {
+      background: var(--dark);
     }
 
     ._abm4:hover,
