@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.4
+@version      3.0.5
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -37,6 +37,10 @@
       animation: fadeIn 300ms linear;
     }
 
+    .x14vhib7 {
+      animation: pulse-highlight-red 2s infinite;
+    }
+
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -44,6 +48,20 @@
 
       100% {
         opacity: 1;
+      }
+    }
+
+    @keyframes pulse-highlight-red {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 48, 64, 0.4)
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px transparent
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 transparent
       }
     }
   }
@@ -72,12 +90,14 @@
     .xnz67gz {
       background: var(--darker);
     }
+
     /* Text */
     ._aacx {
       color: var(--text-color);
     }
 
     ._acao._acat,
+    ._aacx a,
     a._acao._acat,
     a._acao._acat:visited,
     .x1i10hfl {
@@ -125,10 +145,22 @@
       background-color: var(--border-color);
     }
 
+    .x14vhib7 {
+      border: none;
+    }
+
     /* Stories timeline */
     ._aac6 {
       background: var(--dark);
       border: 1px solid var(--border-color);
+    }
+
+    /* New Posts button */
+    ._a9-r {
+      background: var(--darker);
+      color: var(--text-color);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 16px 0px,
+      rgba(0, 0, 0, 0.05) 0px 0px 4px 0px;
     }
 
     /* Timeline */
@@ -165,6 +197,10 @@
       color: linkColor;
     }
 
+    ._aatk {
+      background-color: unset;
+    }
+
     /* Timeline posts (comments) */
     ._ae1i,
     article._ab6k textarea,
@@ -179,6 +215,10 @@
       color: var(--text-color);
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
+    }
+
+    ._ae63 {
+      border-top: 1px solid var(--border-color);
     }
 
     /* Timeline posts (focused) */
@@ -360,6 +400,39 @@
 
     ._acrb textarea {
       color: var(--text-color);
+    }
+
+    /* User profile pop-up (hover) */
+    ._aap3 {
+      box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .2), 0 0 0 1px #2d2d2d;
+    }
+
+    ._aazw {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    ._aacl._aaco._aacu._aacy._aad6._aade {
+      margin-top: .5rem;
+    }
+
+    a[rel="me nofollow noopener noreferrer"] {
+      color: linkColor;
+      font-weight: 700;
+    }
+
+    ._ab5d {
+      border-color: var(--border-color);
+    }
+
+    ._9-_z {
+      filter: invert(1);
+    }
+
+    ._acas:not(._acao),
+    a._acas:not(._acao),
+    a._acas:not(._acao):visited {
+      background-color: var(--darker);
+      border: 1px solid var(--border-color);
     }
   }
 
