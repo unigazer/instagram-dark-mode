@@ -7,7 +7,7 @@ This will restore the Instagram layout to a normal state before the complete dis
 
 ## Preview
 
-![image](https://userstyles.world/preview/4465/0.webp)
+![image](https://userstyles.world/preview/4465/1.webp)
 
 ## Available themes
 There are 3 options from which you can choose.
