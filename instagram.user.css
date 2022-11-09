@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.5
+@version      3.0.6
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -171,12 +171,15 @@
     /* Timeline posts */
     ._ab6k,
     ._ab6s,
-    ._aatc ._aasi {
+    ._aatc ._aasi,
+    ._ae-j,
+    ._aa2b {
       background-color: var(--dark);
     }
 
     ._ab6k,
-    ._ab6s {
+    ._ab6s,
+    ._ae-j {
       border: 1px solid var(--border-color);
     }
 
@@ -186,6 +189,10 @@
 
     ._aaoe {
       border-top: 1px solid var(--border-color);
+    }
+
+    ._aa26 {
+      border-bottom: 1px solid var(--border-color);
     }
 
     ._aasi {
@@ -199,6 +206,12 @@
 
     ._aatk {
       background-color: unset;
+    }
+
+    ._aa27,
+    ._aa29,
+    ._aa2a {
+      background-color: var(--darker);
     }
 
     /* Timeline posts (comments) */
