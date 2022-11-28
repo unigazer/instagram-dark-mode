@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.6
+@version      3.0.7
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -28,6 +28,12 @@
 
   ._aak3 {
     margin-top: 3rem;
+  }
+
+  /* Sidebar */
+  ._aak6 {
+    position: sticky;
+    top: calc(30px + var(--desktop-nav-height));
   }
 
   if (animationToggle) {
