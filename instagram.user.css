@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.7
+@version      3.0.8
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -95,6 +95,38 @@
     body._a3wf,
     .xnz67gz {
       background: var(--darker);
+    }
+
+    /* Login page */
+    ._a995 {
+      background: var(--dark);
+    }
+
+    ._ab21 {
+      background: var(--darker);
+      border: 1px solid var(--border-color);
+    }
+
+    ._abc5 > div:nth-child(1) > i[aria-label="Instagram"] {
+      filter: invert(1);
+    }
+
+    /* OTP login */
+    ._ab3c {
+      color: var(--text-color);
+    }
+
+    input._add6 {
+      background: var(--dark);
+      color: var(--text-color);
+    }
+
+    form._ab3i > div > div {
+      border: 1px solid var(--border-color);
+    }
+
+    form._ab3i > div > div > div {
+      display: none;
     }
 
     /* Text */
@@ -375,6 +407,15 @@
     ._abm4:hover,
     ._abn_ {
       background: var(--darker);
+    }
+
+    /* Reels */
+    .x1ho3rtd {
+      background: var(--darker);
+    }
+
+    section._aiiy {
+      border: 1px solid var(--border-color);
     }
 
     /* Messages */
