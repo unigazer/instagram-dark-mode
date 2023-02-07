@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.0.9
+@version      3.1.0
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -33,7 +33,6 @@
   /* Sidebar */
   ._aak6 {
     position: sticky;
-    top: calc(30px + var(--desktop-nav-height));
   }
 
   if (animationToggle) {
@@ -83,17 +82,60 @@
 
   /* Layout (main) */
   ._aalx {
-    margin-left: calc(100vw - 85vw);
+    margin-left: calc(100vw - 90vw);
   }
 
-  ._aam2 {
+  ._aam1 {
     max-width: 35vw;
+  }
+
+  ._aggc {
+    border: 0;
+  }
+
+  /* Stories timeline */
+  ._aac6 {
+    padding-left: 1rem;
+  }
+
+  /* Post author */
+  ._aasi._aasj._ai9a {
+    padding: 0 .75rem
+  }
+
+  /* Post image */
+  ._aiao {
+    border: 0;
+    border-radius: 0;
+  }
+
+  ._ae3w {
+    border-left: 0;
+  }
+
+  /* Comments */
+  ._ae2s._ae3w._aggd {
+    padding: 0 .75rem;
+  }
+  ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abcm {
+
+    padding-left: 0;
+  }
+
+  ._akhn > textarea {
+    padding: .75rem .5rem;
+  }
+
+  /* Comments - Emoji button */
+  ._abm2 {
+    margin-right: .5rem;
   }
 
   /* Dark */
   darkStyling() {
     body._a3wf,
-    .xnz67gz {
+    .xvbhtw8,
+    section._akek {
       background: var(--darker);
     }
 
@@ -221,14 +263,6 @@
       border: 1px solid var(--border-color);
     }
 
-    ._ae3w {
-      border-left: 1px solid var(--border-color);
-    }
-
-    ._aaoe {
-      border-top: 1px solid var(--border-color);
-    }
-
     ._aa26 {
       border-bottom: 1px solid var(--border-color);
     }
@@ -329,6 +363,17 @@
       color: var(--text-color);
     }
 
+    .x1gjpkn9,
+    ._acat._acap:not(._acap[disabled]):hover {
+      background-color: var(--dark);
+      padding: 18px 16px;
+    }
+
+    .xsz8vos:hover {
+      background-color: rgb(24, 119, 242);
+      color: #fff;
+    }
+
     ._acas:not(._acao),
     a._acas:not(._acao),
     a._acas:not(._acao):visited,
@@ -396,6 +441,9 @@
     }
 
     /* Explore */
+    .xnz67gz {
+      background: var(--darker);
+    }
     /* Search input */
     ._aaw8,
     ._aauy,
@@ -475,10 +523,6 @@
       border-bottom: 1px solid var(--border-color);
     }
 
-    ._aacl._aaco._aacu._aacy._aad6._aade {
-      margin-top: .5rem;
-    }
-
     a[rel="me nofollow noopener noreferrer"] {
       color: linkColor;
       font-weight: 700;
@@ -495,7 +539,7 @@
     ._acas:not(._acao),
     a._acas:not(._acao),
     a._acas:not(._acao):visited {
-      background-color: var(--darker);
+      background-color: var(--dark);
       border: 1px solid var(--border-color);
     }
   }
@@ -505,16 +549,16 @@
     /* Cards */
     ._aac6,
     ._ab6k,
-    ._aak3 {
+    ._aak3,
+    ._aakb ._aakc {
       box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
-    }
-    ._aak3 {
-      border: 1px solid #dbdbdb;
-      border-radius: 8px;
-      margin-top: 3rem;
     }
 
     /* Suggested for you */
+    ._aak3 {
+      margin-top: 3rem;
+    }
+
     ._aba7 {
       padding: 1rem;
     }
