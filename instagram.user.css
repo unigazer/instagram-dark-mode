@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.1.0
+@version      3.1.1
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -81,6 +81,10 @@
   }
 
   /* Layout (main) */
+  .xh8yej3 {
+    max-width: none;
+  }
+
   ._aalx {
     margin-left: calc(100vw - 90vw);
   }
