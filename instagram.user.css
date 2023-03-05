@@ -6,7 +6,7 @@
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
 @updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.1.2
+@version      3.1.3
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -120,10 +120,6 @@
   /* Comments */
   ._ae2s._ae3w._aggd {
     padding: 0 .75rem;
-  }
-  ._ab8w._ab94._ab99._ab9f._ab9m._ab9p._abcm {
-
-    padding-left: 0;
   }
 
   ._akhn > textarea {
@@ -448,6 +444,7 @@
     .xnz67gz {
       background: var(--darker);
     }
+
     /* Search input */
     ._aaw8,
     ._aauy,
@@ -468,6 +465,19 @@
     /* Reels */
     .x1ho3rtd {
       background: var(--darker);
+    }
+
+    .xh8yej3.x78zum5.x1q0g3np.xtuw4uo.xeud2gj.x18oi6gw.x13ehr01 {
+      border: 1px solid var(--border-color);
+    }
+
+    .xh8yej3.x78zum5.x1q0g3np.xtuw4uo.xeud2gj.x18oi6gw.x13ehr01 > div {
+      border-right: 1px solid var(--border-color);
+    }
+
+    .x1clw6ba,
+    ._aaoe {
+      border-top: 1px solid var(--border-color);
     }
 
     section._aiiy {
