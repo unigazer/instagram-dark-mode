@@ -5,8 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@updateURL    https://userstyles.world/api/style/4465.user.css
-@version      3.1.3
+@version      3.1.4
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -129,6 +128,21 @@
   /* Comments - Emoji button */
   ._abm2 {
     margin-right: .5rem;
+  }
+
+  /* Reel (focused) */
+  ._aa6e {
+    max-width: 95% !important;
+  }
+
+  ._aa6d {
+    padding-top: 2rem;
+  }
+
+  /* Messages */
+  ._aa5b > div {
+    max-width: calc(100vw - 725px) !important;
+    border: 1px solid var(--border-color);
   }
 
   /* Dark */
@@ -485,14 +499,12 @@
     }
 
     /* Messages */
-    ._ab8j {
-      max-width: calc(100vw - 725px) !important;
-    }
     ._aa5c,
     ._aa4j,
     ._abyk,
     ._ab8s,
-    ._ab5x > div:nth-child(2) {
+    ._ab5x > div:nth-child(2),
+    .x19g9edo {
       background-color: var(--dark);
     }
 
