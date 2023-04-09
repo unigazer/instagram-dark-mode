@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      3.1.6
+@version      3.1.7
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -135,12 +135,9 @@
   }
 
   /* Comments - Emoji button */
-  article._ab6k svg {
+  article._ab6k form button svg {
     width: 24px;
     height: 24px;
-  }
-
-  article ._abl-._abm2 {
     padding: 0.75rem;
   }
 
