@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      3.1.5
+@version      3.1.6
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -125,9 +125,23 @@
     padding: .75rem .5rem;
   }
 
+  article._ab6k textarea {
+    height: 24px !important;
+    line-height: 1.65;
+  }
+
+  .xs3hnx8::placeholder {
+    line-height: 2;
+  }
+
   /* Comments - Emoji button */
-  ._abm2 {
-    margin-right: .5rem;
+  article._ab6k svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  article ._abl-._abm2 {
+    padding: 0.75rem;
   }
 
   /* Reel (focused) */
@@ -316,8 +330,6 @@
 
     article._ab6k section {
       color: var(--text-color);
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
     }
 
     ._ae63 {
