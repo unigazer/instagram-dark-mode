@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      3.1.8
+@version      3.1.9
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -130,11 +130,13 @@
 
   ._akhn > textarea {
     padding: .75rem .5rem;
+    overflow-y: hidden;
   }
 
   article._ab6k textarea {
     height: 24px !important;
     line-height: 1.65;
+    overflow-y: hidden;
   }
 
   .xs3hnx8::placeholder {
@@ -337,7 +339,8 @@
       color: var(--text-color);
     }
 
-    article._ab6k section {
+    article._ab6k section,
+    ._akhn > textarea {
       color: var(--text-color);
     }
 
@@ -358,7 +361,9 @@
     }
 
     ._ae5r,
-    ._ae1j {
+    ._ae1j,
+    ._aaqf._aaqh > button._abl-,
+    ._aaqg._aaqh > button._abl- {
       background-color: var(--dark);
     }
 
@@ -372,7 +377,8 @@
 
     /* Personal profile card */
     ._aak1,
-    ._aak1:visited {
+    ._aak1:visited,
+    .x568u83:visited {
       color: linkColor;
       font-weight: 700;
     }
@@ -597,6 +603,27 @@
 
     ._aaie {
       color: var(--text-color);
+    }
+
+    /* Bottom left hamburger menu */
+    div[role="dialog"].x1n2onr6:not(.x1ja2u2z) a,
+    div[role="dialog"].x1n2onr6:not(.x1ja2u2z) .x1y1aw1k.x1sxyh0.xwib8y2.xurb0ha,
+    div.x9f619.x1ja2u2z.x1k90msu.x6o7n8i.x1qfuztq.x10l6tqk.x17qophe.x13vifvy.x1hc1fzr.x71s49j.xh8yej3 > div > div,
+    div.x9f619.x1ja2u2z.x1k90msu.x6o7n8i.x1qfuztq.x10l6tqk.x17qophe.x13vifvy.x1hc1fzr.x71s49j.xh8yej3 > div > div:nth-child(4) > div {
+      background-color: var(--darker) !important;
+    }
+
+    div[role="dialog"].x1n2onr6:not(.x1ja2u2z) a:hover *,
+    .x1y1aw1k.x1sxyh0.xwib8y2.xurb0ha div:hover * {
+      background-color: var(--dark) !important;
+    }
+
+    div[role="dialog"].x1n2onr6:not(.x1ja2u2z) .xks8skl {
+      display: none;
+    }
+
+    .xgf5ljw.x78zum5.xdt5ytf.x5yr21d.x1n2onr6.xh8yej3.x13b9bq5.x6ikm8r.x10wlt62.xfh8nwu.xoqspk4.x12v9rci.x138vmkv {
+      border: 1px solid var(--border-color);
     }
   }
 
