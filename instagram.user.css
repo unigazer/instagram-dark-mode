@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      3.2.0
+@version      3.2.1
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -183,6 +183,11 @@
     .xvbhtw8,
     section._akek {
       background: var(--darker);
+    }
+
+    /* Splash screen */
+    #splash-screen {
+      background: var(--dark);
     }
 
     /* Login page */
