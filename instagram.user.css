@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      3.1.9
+@version      3.2.0
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -36,8 +36,10 @@
 
   if (animationToggle) {
     ._ab6k,
-    ._ab70,
-    ._aabd._aa8k._aanf {
+    ._al5u,
+    ._aatg > div,
+    ._aabd._aa8k._al3l,
+    ._abq3._al5p {
       animation: fadeIn 300ms linear;
     }
 
@@ -168,6 +170,11 @@
   /* Suggested for you */
   ._aak3 > div:nth-child(1) {
     padding-top: 1rem;
+  }
+
+  /* User profile */
+  .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {
+    align-items: center;
   }
 
   /* Dark */
@@ -315,7 +322,8 @@
     a._aaqk,
     a._aaqk:visited,
     a._acao._acat._aija,
-    a._acao._acat._aija:visited {
+    a._acao._acat._aija:visited,
+    .xl565be {
       color: linkColor;
     }
 
@@ -435,6 +443,30 @@
 
     .x1wzhzgj {
       border-top: 1px solid var(--border-color);
+    }
+
+    /* Profile - Account is Private */
+    ._aady {
+      background-color: var(--dark);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+    }
+
+    ._aa_u,
+    ._a9zv {
+      color: linkColor;
+    }
+
+    /* Profile - Suggested for you */
+    li._acaz > div > div > div:is(.xvbhtw8.x178xt8z.xm81vs4.xso031l.xy80clv.x1yvgwvq.x1dqoszc) {
+      border: 1px solid var(--border-color);
+    }
+
+    ._a9_u._afxv._al46._al47 > div,
+    ._a9_u._afxw._al46._al47 > div {
+      filter: invert(1);
+      background-color: #fff;
+      border-radius: 24px;
     }
 
     a._aa--,
