@@ -1,6 +1,6 @@
 {
   "name": "instagram-dark-mode",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "A proper dark mode for Instagram web version",
   "main": "instagram.user.css",
   "repository": {
