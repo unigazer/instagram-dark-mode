@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      3.2.3
+@version      3.2.4
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -568,17 +568,44 @@
     ._abyk,
     ._ab8s,
     ._ab5x > div:nth-child(2),
-    .x19g9edo {
+    .x19g9edo,
+    .xj6ak53,
+    .x1jx94hy,
+    .xgf5ljw {
       background-color: var(--dark);
     }
 
-    ._ab8o {
+    ._ab8o,
+    .xcrg951,
+    .x1ja2u2z.x9f619.x78zum5.xdt5ytf.x193iq5w.x1l7klhg.x1iyjqo2.xs83m0k.x2lwn1j.xcrg951.x6prxxf.x6ikm8r.x10wlt62.x1n2onr6 {
       background-color: var(--darker);
     }
 
-    ._ab5w {
-      background: var(--darker);
+    ._ab5w,
+    {
+      background-color: var(--darker) !important;
     }
+
+    /* Messages - Sender */
+    div.x1n2onr6 > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
+    div.x1n2onr6 > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+      background-color: var(--dark) !important;
+      color: var(--text-color);
+    }
+
+    .xzsf02u {
+      color: var(--text-color);
+    }
+
+    .x19g9edo {
+      border: 2px solid var(--border-color);
+    }
+
+    /* Messeges - Emoji picker */
+    svg.x10l6tqk {
+      fill: var(--dark)
+    }
+
 
     ._ab8j,
     ._ac1r,
@@ -587,12 +614,14 @@
       background-color: var(--dark);
     }
 
-    ._aa4j {
+    ._aa4j,
+    .x13zqm9e {
       border-bottom: 1px solid var(--border-color);
     }
 
-    ._aa5c {
-      border-right: 1px solid var(--border-color);
+    ._aa5c,
+    .x63ui4o {
+      border: 1px solid var(--border-color);
     }
 
     ._acrb {
