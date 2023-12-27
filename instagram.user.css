@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.0.1
+@version      4.0.2
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -174,7 +174,7 @@
 	darkStyling() {
 
 		svg {
-			&:not([aria-label="Like"]):not([aria-label="Verified"]):not([aria-label="Audio is playing"]):not([aria-label="Play button icon"]):not([aria-label="Close"]):not([aria-label="Audo is muted."]):not([aria-label="Go Back"]):not([aria-label="Next"]):not([aria-label="Tags"]):not([aria-label="Select crop"]):not([aria-label="Select zoom"]):not([aria-label="Open media gallery"]) {
+			&:not([aria-label="Like"]):not([aria-label="Verified"]):not([aria-label="Audio is playing"]):not([aria-label="Play button icon"]):not([aria-label="Close"]):not([aria-label="Audo is muted."]):not([aria-label="Go Back"]):not([aria-label="Next"]):not([aria-label="Tags"]):not([aria-label="Select crop"]):not([aria-label="Select zoom"]):not([aria-label="Open media gallery"]):not([aria-label="Play"]):not([aria-label="Pause"]):not([aria-label="Video has no audio."]):not([aria-label="Menu"]):not([aria-label="Direct"]):not(.x1lliihq.x1n2onr6.x9bdzbf) {
 				filter: invert();
 			}
 		}
@@ -509,16 +509,30 @@
 				}
 			}
 
-			& > div {
-				border: 1px solid #ededed;
-			}
-
 			section._aaoe._agne._ae5y._ae5_._ae60._ae62 > div > form > div {
 				background-color: #fff;
 			}
 
 			form._aidk._ak6u {
 				outline: 1px solid #ededed;
+			}
+		}
+
+		/* Messenger */
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div > div > div > div {
+			background-color: #fafafa;
+
+			& > .x1vjfegm {
+				background-color: #fafafa;
+			}
+
+			& > .x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div:nth-child(2) {
+				background-color: #fafafa;
+
+				& > div {
+					background: #fff;
+					outline: 1px solid #dfdfdf;
+				}
 			}
 		}
 	}
