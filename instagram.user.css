@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.0.0
+@version      4.0.1
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -174,11 +174,10 @@
 	darkStyling() {
 
 		svg {
-			&:not([aria-label="Like"]):not([aria-label="Verified"]):not([aria-label="Audio is playing"]):not([aria-label="Play button icon"]):not([aria-label="Close"]):not([aria-label="Audo is muted."]):not([aria-label="Go Back"]):not([aria-label="Next"]):not([aria-label="Tags"]) {
+			&:not([aria-label="Like"]):not([aria-label="Verified"]):not([aria-label="Audio is playing"]):not([aria-label="Play button icon"]):not([aria-label="Close"]):not([aria-label="Audo is muted."]):not([aria-label="Go Back"]):not([aria-label="Next"]):not([aria-label="Tags"]):not([aria-label="Select crop"]):not([aria-label="Select zoom"]):not([aria-label="Open media gallery"]) {
 				filter: invert();
 			}
 		}
-
 
 		/* Reels */
 		section > main > div:nth-child(1) > section > ._aam1._amtu._akej._amtv._aam2._akmr > ._aac4._aac5._aac6._aj3f {
@@ -210,11 +209,21 @@
 			span {
 				color: var(--text-color);
 			}
+
+			.x80pfx3:hover {
+				background-color: var(--dark);
+			}
 		}
 
 		/* Search */
 		._abn_ {
 			background-color: var(--dark);
+		}
+
+		.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1iyjqo2.x2lwn1j.xeuugli.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1d52u69.xktsk01.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > input {
+			background-color: var(--dark);
+			border: 1px solid var(--border-color);
+			color: var(--text-color);
 		}
 
 		/* Notifications */
@@ -437,6 +446,7 @@
 		._a9-z,
 		._ac76 {
 			background-color: var(--darker);
+			border-bottom: 1px solid var(--border-color);
 
 			button {
 				border-top: 1px solid var(--border-color);
@@ -450,6 +460,12 @@
 					background-color: var(--dark);
 				}
 			}
+		}
+
+		/* Dialog - Create new post */
+		.x6s0dn4.x78zum5.x5yr21d.xl56j7k.x1n2onr6.xh8yej3 > div > div,
+		.x15wfb8v.x3aagtl.x6ql1ns.x78zum5.xdl72j9.x1iyjqo2.xs83m0k.x13vbajr.x1ue5u6n > .xhk4uv.x26u7qi.xy80clv.x9f619.x78zum5.x1n2onr6.x1f4304s > div > div {
+			background-color: var(--darker);
 		}
 
 		/* Emoji picker */
@@ -499,6 +515,10 @@
 
 			section._aaoe._agne._ae5y._ae5_._ae60._ae62 > div > form > div {
 				background-color: #fff;
+			}
+
+			form._aidk._ak6u {
+				outline: 1px solid #ededed;
 			}
 		}
 	}
