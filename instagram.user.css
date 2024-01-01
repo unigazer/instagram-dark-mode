@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.0.3
+@version      4.0.4
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -171,12 +171,23 @@
 		}
 	}
 
-	darkStyling() {
+	/* Emoji Picker */
+	.xu96u03.xm80bdy.x10l6tqk.x13vifvy > .x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div {
+		width: 19vw !important;
+	}
 
-		svg {
-			&:not([aria-label="Like"]):not([aria-label="Verified"]):not([aria-label="Audio is playing"]):not([aria-label="Play button icon"]):not([aria-label="Close"]):not([aria-label="Audo is muted."]):not([aria-label="Go Back"]):not([aria-label="Next"]):not([aria-label="Tags"]):not([aria-label="Select crop"]):not([aria-label="Select zoom"]):not([aria-label="Open media gallery"]):not([aria-label="Play"]):not([aria-label="Pause"]):not([aria-label="Video has no audio."]):not([aria-label="Menu"]):not([aria-label="Direct"]):not(.x1lliihq.x1n2onr6.x9bdzbf) {
-				filter: invert();
+	darkStyling() {
+		/* General */
+		body {
+			#splash-screen {
+				background-color: var(--dark) !important;
 			}
+		}
+
+		/* General - SVG */
+		svg.x5n08af,
+		svg.xyb1xck {
+			color: #fff;
 		}
 
 		/* Reels */
@@ -415,9 +426,15 @@
 				.xyb01ml {
 					border: 1px solid var(--border-color);
 				}
+
+				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.xjp7ctv > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.x1dr59a3.xh8yej3 > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div {
+					border-right-color: var(--border-color);
+				}
 			}
 
-			section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div,
+			.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div,
 			.x1n2onr6 .xcrg951,
 			.x19g9edo {
 				background-color: var(--darker);
@@ -441,6 +458,13 @@
 			}
 		}
 
+		/* Messenger Splash screen */
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div,
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.x1dr59a3.xh8yej3 > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.x1dr59a3.xh8yej3 > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div {
+			background-color: var(--dark) !important;
+		}
 
 		/* Dialog */
 		._a9-z,
