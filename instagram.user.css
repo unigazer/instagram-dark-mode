@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.0.4
+@version      4.0.5
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -16,6 +16,7 @@
 		--dark: #1c1c1c;
 		--darker: #111;
 		--border-color: #2d2d2d;
+		--border-light-color: #ededed;
 		--text-color: #ccc;
 		--text-color-visited: #9f9f9f;
 	}
@@ -99,9 +100,14 @@
 		}
 
 		div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {
-			& > div > div {
-				padding-right: 1rem;
-				padding-left: 1rem;
+			& > div > div > div > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1e56ztr.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1cy8zhl.x1oa3qoh.x1nhvcw1,
+			& > div > div > div > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1e56ztr.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1,
+			& > div > div > div > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x12nagc.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1,
+			& > div > div > section._aamu._ae3_._ae40._ae41._ae48._agge,
+			& > div > div > section._ae5m._ae5o._ae5p._agge,
+			& > div > div > section._aaoe._agne._ae5y._ae5_._ae60._ae62 {
+				padding-left: 1rem !important;
+				padding-right 1rem !important;
 			}
 
 			/* Description */
@@ -427,8 +433,8 @@
 					border: 1px solid var(--border-color);
 				}
 
-				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.xjp7ctv > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.x1dr59a3.xh8yej3 > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .x1dr59a3.xh8yej3 > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
 				& > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div {
 					border-right-color: var(--border-color);
 				}
@@ -459,12 +465,13 @@
 		}
 
 		/* Messenger Splash screen */
-		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div,
-		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.x1dr59a3.xh8yej3 > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > div.x1dr59a3.xh8yej3 > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div {
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div,
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .x1dr59a3.xh8yej3 > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
+		.x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .x1dr59a3.xh8yej3 > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div {
 			background-color: var(--dark) !important;
 		}
+
 
 		/* Dialog */
 		._a9-z,
@@ -513,13 +520,14 @@
 		.xw7yly9 > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > article > div,
 		.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div > div > div > .xvbhtw8.x13zqm9e.xnc8uc2.x11aubdm {
 			background: #fafafa;
-			border: 1px solid #eaeaea;
+			border: 1px solid var(--border-light-color);
 			box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
 		}
 
 		/* Sidebar */
 		.x1xgvd2v {
 			background: #fafafa;
+			border-right: 1px solid var(--border-light-color);
 		}
 
 		/* Post */
@@ -527,6 +535,7 @@
 			& > div > ._aasi._aasj._ai9a {
 				background-color: #fafafa;
 			}
+
 			div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {
 				& > div > div {
 					background-color: #fafafa;
@@ -537,9 +546,13 @@
 				background-color: #fff;
 			}
 
-			form._aidk._ak6u {
-				outline: 1px solid #ededed;
+			div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > section._aaoe._agne._ae5y._ae5_._ae60._ae62 > div > form {
+				outline: 1px solid var(--border-light-color);
 			}
+		}
+
+		.x9f619.x1n2onr6.x1ja2u2z > div > div > .x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > .x9f619.xvbhtw8.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x17snn68.x6osk4m.x1porb0y > section > main > div:nth-child(1) > section > ._aam1._amtu._akej._amtv._aam2._akmr > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div > div:nth-child(1) > div > article > div {
+			outline: 1px solid #ededed;
 		}
 
 		/* Messenger */
