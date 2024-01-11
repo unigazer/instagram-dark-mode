@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.0.5
+@version      4.0.6
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -55,6 +55,10 @@
 	/* Suggested for you */
 	._aak3 {
 		margin-top: 3rem;
+
+		& > div:first-child {
+			margin-top: 1rem;
+		}
 	}
 
 	/* The "Like" button */
