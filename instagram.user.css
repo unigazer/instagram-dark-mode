@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.1.0
+@version      4.1.1
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -275,6 +275,11 @@
 
 			form._aidk._aidl._aie4._ak6u {
 				background-color: var(--dark);
+			}
+
+			& > div:nth-child(1) > div:nth-child(2),
+			& > div:nth-child(2) > div:nth-child(2) {
+				border: 0;
 			}
 
 			/* Focused */
