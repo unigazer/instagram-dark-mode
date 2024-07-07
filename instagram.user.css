@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.1.7
+@version      4.1.8
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -22,7 +22,8 @@
 	}
 
 	/* General */
-	.xw7yly9 > div:nth-child(2) > div:nth-child(1) {
+	.xw7yly9 > div:nth-child(2) > div:nth-child(1),
+	main > div.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div > div {
 		width: 35dvw !important;
 	}
 
@@ -383,6 +384,13 @@
 		/* Profile Page - Stories */
 		section > main > div > .xzzrveb.x1h862dm.xjk3ia2.x1tb5o9v > div > div > div > ul > li > div > div > .x1ypdohk.x2b8uid.xh8yej3.x1ldzjpm.xpzf5u2 > span > span {
 			color: var(--text-color);
+		}
+
+		/* You're all caught up */
+		main > div.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > div > div.xvbhtw8.x1bs97v6.x1q0q8m5.xso031l.x11aubdm.xnc8uc2 {
+			background-color: var(--darker);
+			border-bottom: 0;
+			box-shadow: rgb(1, 4, 9) 0px 3px 6px 0px;
 		}
 
 		/* Reels */
