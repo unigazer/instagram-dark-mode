@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.1.9
+@version      4.1.10
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -54,7 +54,7 @@
 
   /* Suggested for you */
   main > .x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {
-    margin-top: 2.4rem;
+    margin-top: 2.7rem;
 
     & > div:first-child {
       margin-top: 1rem;
@@ -509,6 +509,12 @@
       border: 1px solid var(--border-light-color);
       box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
     }
+
+    /* Suggested for you */
+		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div {
+			background: #fafafa;
+			box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
+		}
 
     /* Sidebar */
     .x1xgvd2v {
