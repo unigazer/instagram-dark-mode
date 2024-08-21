@@ -5,7 +5,7 @@
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.1.10
+@version      4.1.11
 @preprocessor stylus
 @var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
@@ -76,9 +76,9 @@
   /* Post */
   article {
 
-    & > div > div.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div,
-    & > div > div.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div > div > div > div._aamn > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x10l6tqk.x1ey2m1c.x13vifvy.x17qophe.xds687c.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div,
-    & > div > div.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div > div > div > div.x1lliihq.x1n2onr6 > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x10l6tqk.x1ey2m1c.x13vifvy.x17qophe.xds687c.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div {
+    & > div > .x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div,
+    & > div > .x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div > div > div > ._aamn > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x10l6tqk.x1ey2m1c.x13vifvy.x17qophe.xds687c.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div,
+    & > div > .x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div > div > div > .x1lliihq.x1n2onr6 > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x10l6tqk.x1ey2m1c.x13vifvy.x17qophe.xds687c.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div {
       width: 33dvw !important;
     }
 
@@ -88,16 +88,16 @@
     }
 
 
-    & > div > div.xsag5q8.x1e558r4 {
+    & > div > .xsag5q8.x1e558r4 {
       padding: 12px 18px;
     }
 
-    & > div > div.x6s0dn4.xyzq4qe.x1ypdohk.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv {
+    & > div > .x6s0dn4.xyzq4qe.x1ypdohk.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv {
       border: 0;
       border-radius: 0;
     }
 
-    & > div > div.x1lliihq.x1n2onr6 > div {
+    & > div > .x1lliihq.x1n2onr6 > div {
       padding: 0 1rem;
     }
 
@@ -186,7 +186,7 @@
     }
 
     /* Switch Account Card */
-    main > div.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div.x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1pi30zi.x1swvt13.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > div > div > div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.x1iyjqo2.xs83m0k.xeuugli.x1qughib.x6s0dn4.x1a02dak.x1q0g3np.xdl72j9 > div > div > div > a {
+    main > .x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1pi30zi.x1swvt13.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.x1iyjqo2.xs83m0k.xeuugli.x1qughib.x6s0dn4.x1a02dak.x1q0g3np.xdl72j9 > div > div > div > a {
       color: linkColor;
     }
 
@@ -266,11 +266,11 @@
         box-shadow: rgb(1, 4, 9) 0px 3px 6px 0px;
       }
 
-      & > div > div.xsag5q8.x1e558r4 {
+      & > div > .xsag5q8.x1e558r4 {
         background-color: var(--darker);
       }
 
-      & > div > div.x1lliihq.x1n2onr6 > div {
+      & > div > .x1lliihq.x1n2onr6 > div {
         background-color: var(--darker);
 
 
@@ -298,10 +298,10 @@
       }
 
       /* Focused */
-      & > div > div.x1qjc9v5.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.x78zum5.xdt5ytf.x1iyjqo2.x5wqa0o.xln7xf2.xk390pu.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.x65f84u.x1vq45kp.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x1n2onr6.x11njtxf > div > div {
+      & > div > .x1qjc9v5.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.x78zum5.xdt5ytf.x1iyjqo2.x5wqa0o.xln7xf2.xk390pu.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.x65f84u.x1vq45kp.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x1n2onr6.x11njtxf > div > div {
 
         ._aasi,
-        & > div.x78zum5.xdt5ytf.x1q2y9iw.x1n2onr6.xh8yej3.x9f619.x1iyjqo2.x18l3tf1.x26u7qi.xy80clv.xexx8yu.x4uap5.x18d9i69.xkhd6sd {
+        & > .x78zum5.xdt5ytf.x1q2y9iw.x1n2onr6.xh8yej3.x9f619.x1iyjqo2.x18l3tf1.x26u7qi.xy80clv.xexx8yu.x4uap5.x18d9i69.xkhd6sd {
           border: 0 !important;
         }
 
@@ -386,7 +386,7 @@
     }
 
     /* You're all caught up */
-    main > div.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > div > div.xvbhtw8.x1bs97v6.x1q0q8m5.xso031l.x11aubdm.xnc8uc2 {
+    main > .x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > div > .xvbhtw8.x1bs97v6.x1q0q8m5.xso031l.x11aubdm.xnc8uc2 {
       background-color: var(--darker);
       border-bottom: 0;
       box-shadow: rgb(1, 4, 9) 0px 3px 6px 0px;
@@ -516,7 +516,7 @@
     }
 
     /* Suggested for you */
-		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div {
+		main > .x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div {
 			background: #fafafa;
 			box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
 		}
@@ -535,11 +535,11 @@
         box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
       }
 
-      & > div > div.xsag5q8.x1e558r4 {
+      & > div > .xsag5q8.x1e558r4 {
         background-color: #fafafa;
       }
 
-      & > div > div.x1lliihq.x1n2onr6 > div {
+      & > div > .x1lliihq.x1n2onr6 > div {
         background-color: #fafafa;
       }
 
