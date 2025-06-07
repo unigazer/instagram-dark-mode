@@ -4,7 +4,7 @@ This will restore the Instagram layout to a normal state before the complete dis
 
 ## Pre-install
 
-Make sure you set the app appearance to "Light" by turning on Instagram's "Dark mode" in the bottom left corner. Click on the hamburger menu at the bottom left corner, select "Switch appearance" from the options, and then disable the "Dark mode" by clicking on the toggle for the "Dark mode" option.
+Make sure you set the app appearance to "Light" by turning off Instagram's "Dark mode" in the bottom left corner. Click on the hamburger menu at the bottom left corner, select "Switch appearance" from the options, and then disable the "Dark mode" by clicking on the toggle for the "Dark mode" option.
 
 ## Install
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://github.com/unigazer/instagram-dark-mode/raw/main/instagram.user.css)
