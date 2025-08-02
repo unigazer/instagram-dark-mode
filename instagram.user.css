@@ -1,597 +1,141 @@
 /* ==UserStyle==
 @name         Instagram Dark/Light Mode
-@description  A proper dark mode for Instagram web version
+@description  A proper dark/light mode for Instagram web version
 @namespace    https://github.com/unigazer
 @author       Vladimir Jovanovic <me@vladio.me> (https://vladio.me)
 @homepageURL  https://github.com/unigazer/instagram-dark-mode
 @supportURL   https://github.com/unigazer/instagram-dark-mode/issues
-@version      4.1.13
+@version      5.0.0
 @preprocessor stylus
-@var color    linkColor  "Link color"   #fafafa
 @var checkbox	animationToggle "Enable animations"	1
-@var select		theme "Theme" ["dark:Dark theme", "light:Light theme", "system:System theme"]
+@var select		theme "Theme" ["system:System theme", "dark:Dark theme", "light:Light theme"]
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
-  :root {
-    --dark: #1c1c1c;
-    --darker: #111;
-    --border-color: #2d2d2d;
-    --border-light-color: #ededed;
-    --text-color: #ccc;
-    --text-color-visited: #9f9f9f;
-  }
-
-  /* General */
-  main > .x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div {
-    width: 35dvw !important;
-  }
-
-  body > .x1n2onr6.xzkaem6 {
-    backdrop-filter: blur(4px);
-  }
-
-  /* Sidebar */
-  div > div > .x9f619.x1n2onr6.x1ja2u2z > div > div > div > div > div > div > div > div {
-    border: 0;
-  }
-
-  /* Search */
-  .x9f619.x1n2onr6.x1ja2u2z > div > div > .x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > .x9f619.xvbhtw8.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1.x1dr59a3.xixxii4.x13vifvy.xeq5yr9.x1n327nk > div > div > .x10l6tqk.x1u3tz30.x1ja2u2z > div {
-    border: 0;
-    border-radius: 0;
-    overflow-x: hidden;
-  }
-
-  /* Notifications */
-  .x9f619.x1n2onr6.x1ja2u2z > div > div > .x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > .x9f619.xvbhtw8.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1.x1dr59a3.xixxii4.x13vifvy.xeq5yr9.x1n327nk > div > div > .x10l6tqk.x1u3tz30.x1ja2u2z > div > div {
-    border-radius: 0;
-  }
-
-  /* Reels */
-  section > main > div:nth-child(1) > section > ._aam1._amtu._akej._amtv._aam2._akmr > ._aac4._aac5._aac6._aj3f {
-    padding-left: 1rem;
-  }
-
-  /* Suggested for you */
-  main > .x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {
-    margin-top: 2.7rem;
-
-    & > div:first-child {
-      margin-top: 1rem;
-    }
-  }
-
-  /* The "Like" button */
-  svg {
-
-    &:is([aria-label="Like"]) {
-      fill: #ed4956;
-    }
-
-    &:is([aria-label="Unlike"]) {
-      filter: drop-shadow(0 0 10px #ed4956) !important;
-    }
-  }
-
-  /* Post */
-  article {
-
-    & > div > .x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div,
-    & > div > .x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div > div > div > ._aamn > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x10l6tqk.x1ey2m1c.x13vifvy.x17qophe.xds687c.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div,
-    & > div > .x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv > div:nth-child(1) > div > div > div > div > .x1lliihq.x1n2onr6 > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x10l6tqk.x1ey2m1c.x13vifvy.x17qophe.xds687c.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div,
-    & > div > div.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.x6usi7g.x1bs97v6.x18dxpii.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.x18b5jzi.x1q0q8m5.x1t7ytsu.x178xt8z.x1lun4ml.xso031l.xpilrb4 > div > div > div,
-    & > div > div.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.x6usi7g.x1bs97v6.x18dxpii.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.x18b5jzi.x1q0q8m5.x1t7ytsu.x178xt8z.x1lun4ml.xso031l.xpilrb4 > div:nth-child(1) > div > div > div.x1iyjqo2 > div > div.x1lliihq.x1n2onr6 > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x10l6tqk.x1ey2m1c.x13vifvy.x17qophe.xds687c.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div {
-      width: 33dvw !important;
-      object-fit: cover;
-    }
-
-
-    & > div {
-      border-bottom: 0 !important;
-    }
-
-
-    & > div > .xsag5q8 {
-      padding: 1rem;
-    }
-
-    & > div > .x6s0dn4.xyzq4qe.x1ypdohk.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.xopu45v.x1bs97v6.xmo9t06.x1lcm9me.x1yr5g0i.xrt01vj.x10y3i5r.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.x178xt8z.xm81vs4.xso031l.xy80clv {
-      border: 0;
-      border-radius: 0;
-    }
-
-    & > div > .x1lliihq.x1n2onr6 > div {
-      padding: 0 1rem;
-    }
-
-    textarea {
-      padding: 0.5rem !important;
-    }
-
-    form._aidk._aidl._aie4._ak6u {
-      border-radius: 0;
-    }
-  }
-
-  /* Profile */
-  section {
-    main {
-      padding-bottom: 5rem;
-    }
-  }
-
-  if (animationToggle) {
-    ._ab6k,
-    ._al5u,
-    ._aatg > div,
-    ._aabd._aa8k._al3l,
-    ._abq3._al5p,
-    ._aagu {
-      animation: fadeIn 300ms linear;
-    }
-
-    .x14vhib7 {
-      animation: pulse-highlight-red 2s infinite;
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes pulse-highlight-red {
-      0% {
-        box-shadow: 0 0 0 0 rgba(255, 48, 64, 0.4)
-      }
-
-      70% {
-        box-shadow: 0 0 0 10px transparent
-      }
-
-      100% {
-        box-shadow: 0 0 0 0 transparent
-      }
-    }
-  }
-
-  /* Emoji Picker */
-  .xu96u03.xm80bdy.x10l6tqk.x13vifvy > .x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div {
-    width: 19vw !important;
-  }
-
-  darkStyling() {
-    /* General */
-    body {
-      #splash-screen {
-        background-color: var(--dark) !important;
-      }
-    }
-
-    /* General - SVG */
-    svg.x5n08af:not([aria-label="Similar accounts"], [aria-label="Options"]),
-    svg.xyb1xck {
-      color: #fff;
-    }
-
-    /* Main Page - Stories */
-    main > .x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > .xmnaoh6 > div > div {
-      background-color: var(--darker);
-      box-shadow: rgb(1, 4, 9) 0px 3px 6px 0px;
-
-      button > div:nth-child(2) {
-        color: var(--text-color);
-      }
-    }
-
-    /* Switch Account Card */
-    main > .x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1pi30zi.x1swvt13.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.x1iyjqo2.xs83m0k.xeuugli.x1qughib.x6s0dn4.x1a02dak.x1q0g3np.xdl72j9 > div > div > div > a {
-      color: linkColor;
-    }
-
-    /* Hero */
-    section {
-      main {
-        background-color: var(--dark) !important;
-      }
-    }
-
-    /* Sidebar */
-    #scrollview > div > div > .x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > div > div > div > div > div > div {
-      background-color: var(--darker);
-
-      span {
-        color: var(--text-color);
-      }
-
-      .x80pfx3:hover {
-        background-color: var(--dark);
-      }
-    }
-
-    .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1.x1dr59a3.xixxii4.x13vifvy.xeq5yr9.x1n327nk > div > div > div > div {
-      background-color: var(--darker);
-    }
-
-    .xopu45v {
-      border-right-color: var(--border-color);
-    }
-
-    /* Search */
-    ._abn_ {
-      background-color: var(--dark);
-    }
-
-    .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1iyjqo2.x2lwn1j.xeuugli.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1d52u69.xktsk01.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > input {
-      background-color: var(--dark);
-      border: 1px solid var(--border-color);
-      color: var(--text-color);
-    }
-
-    /* Notifications */
-    .x9f619.x1n2onr6.x1ja2u2z > div > div > .x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > .x9f619.xvbhtw8.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1.x1dr59a3.xixxii4.x13vifvy.xeq5yr9.x1n327nk > div > div > .x10l6tqk.x1u3tz30.x1ja2u2z > div > div {
-      background-color: var(--darker);
-      border-right: 1px solid var(--border-color);
-
-      hr {
-        background-color: var(--border-color);
-      }
-
-      button {
-        background-color: var(--dark);
-        color: var(--text-color);
-      }
-    }
-
-    /* Suggested for you */
-    main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div.x1dr59a3.x13vifvy.x7vhb2i.x6bx242 > div > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div {
-      background-color: var(--darker);
-      box-shadow: rgb(1, 4, 9) 0px 3px 6px 0px;
-
-      span {
-        color: linkColor;
-      }
-
-      & > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xv54qhq.xf7dkkf.xjkvuk6.x1iorvi4.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 {
-        padding: 1rem;
-      }
-    }
-
-    main > div > section > ._aam1._amtu._akej._amtv._aam2._akmr span {
-      color: var(--text-color);
-    }
-
-    /* Post */
-    article {
-
-      & > div {
-        background-color: var(--darker);
-        box-shadow: rgb(1, 4, 9) 0px 3px 6px 0px;
-      }
-
-      & > div > .xsag5q8.x1e558r4 {
-        background-color: var(--darker);
-      }
-
-      & > div > .x1lliihq.x1n2onr6 > div {
-        background-color: var(--darker);
-
-
-        a {
-          color: linkColor !important;
-        }
-      }
-
-      textarea {
-        background-color: var(--dark) !important;
-        color: var(--text-color) !important;
-      }
-
-      form {
-        background-color: var(--dark);
-
-        & > div {
-          background-color: var(--dark);
-        }
-      }
-
-      & > div:nth-child(1) > div:nth-child(2),
-      & > div:nth-child(2) > div:nth-child(2) {
-        border: 0;
-      }
-
-      /* Focused */
-      & > div > .x1qjc9v5.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.x78zum5.xdt5ytf.x1iyjqo2.x5wqa0o.xln7xf2.xk390pu.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.x65f84u.x1vq45kp.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x1n2onr6.x11njtxf > div > div {
-
-        ._aasi,
-        & > .x78zum5.xdt5ytf.x1q2y9iw.x1n2onr6.xh8yej3.x9f619.x1iyjqo2.x18l3tf1.x26u7qi.xy80clv.xexx8yu.x4uap5.x18d9i69.xkhd6sd {
-          border: 0 !important;
-        }
-
-        & > ._aasi {
-          background-color: var(--dark);
-          border-bottom: 0;
-          border-radius: 0;
-        }
-
-        & > div {
-          background-color: var(--darker);
-        }
-
-        a {
-          color: linkColor !important;
-        }
-
-        h1,
-        span,
-        time {
-          color: var(--text-color);
-        }
-
-        section.x78zum5.x1q0g3np.xwib8y2.x1yrsyyn.x1xp8e9x.x13fuv20.x178xt8z.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.xo1ph6p.x1pi30zi.x1swvt13,
-        section.x5ur3kl.x13fuv20.x178xt8z.x1roi4f4.x2lah0s.xvs91rp.xl56j7k.x17ydfre.x1n2onr6.x10b6aqq.x1yrsyyn.x1hrcb2b.x1pi30zi {
-          border-top: 1px solid var(--border-color);
-        }
-      }
-    }
-
-    /* Profile Page */
-    section > main > div > header {
-      h1,
-      h2,
-      span,
-      li {
-        color: var(--text-color) !important;
-      }
-
-      a {
-        color: linkColor !important;
-      }
-
-      section {
-        div > .x1dc814f.x1yrsyyn.x10b6aqq > a {
-          background-color: var(--darker);
-        }
-
-        .x6s0dn4.x78zum5.x1q0g3np.xs83m0k.xeuugli.x1n2onr6 > div > div > div {
-          button,
-          a,
-          div {
-            background-color: var(--darker);
-            color: var(--text-color) !important;
-          }
-        }
-
-        svg:not([aria-label="Verified"]):not([aria-label="Link icon"]) {
-          filter: invert(1);
-        }
-      }
-    }
-
-    /* Profile Page - Divider */
-    section > main > div > .x6s0dn4.x5ur3kl.x13fuv20.x178xt8z.x1w9h7q7.x78zum5.x1pg5gke.x1s688f.xl56j7k.x1r0g7yl.x2b8uid.xtvhhri {
-      border-top-color: var(--border-color);
-    }
-
-    /* Progile Page - Tabs */
-    a._aa-z._ap3g._aa--._ac_u._a6hd:is([aria-selected="true"]) {
-      color: var(--text-color);
-      border-top: 1px solid #ccc !important;
-
-      svg {
-        filter: invert() brightness(70%);
-      }
-    }
-
-    /* Profile Page - Stories */
-    section > main > div > .xzzrveb.x1h862dm.xjk3ia2.x1tb5o9v > div > div > div > ul > li > div > div > .x1ypdohk.x2b8uid.xh8yej3.x1ldzjpm.xpzf5u2 > span > span {
-      color: var(--text-color);
-    }
-
-    /* You're all caught up */
-    main > .x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > div > .xvbhtw8.x1bs97v6.x1q0q8m5.xso031l.x11aubdm.xnc8uc2 {
-      background-color: var(--darker);
-      border-bottom: 0;
-      box-shadow: rgb(1, 4, 9) 0px 3px 6px 0px;
-    }
-
-    /* Reels */
-    .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x17snn68.x6osk4m.x1porb0y > section > main > div {
-      background-color: var(--dark);
-
-      span {
-        color: var(--text-color);
-      }
-    }
-
-    /* Messenger */
-    .x9f619 {
-      &.xvbhtw8.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib,
-      &.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div > div > div > div > .x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div:nth-child(2),
-      & > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-      & > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div > div > div > div > .x1vjfegm > div,
-      .x1okitfd {
-        background-color: var(--dark) !important;
-
-        .xyb01ml {
-          border: 1px solid var(--border-color);
-        }
-
-        & > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-        & > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .x1dr59a3.xh8yej3 > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-        & > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div {
-          border-right-color: var(--border-color);
-        }
-      }
-
-      .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div,
-      .x1n2onr6 .xcrg951,
-      .x19g9edo {
-        background-color: var(--darker);
-
-        a {
-          background-color: var(--dark);
-          color: var(--text-color);
-        }
-      }
-
-      .x1l895ks:hover {
-        background-color: var(--darker);
-        outline: 2px solid var(--border-color);
-      }
-
-      h1,
-      span,
-      p,
-      .x1okitfd div {
-        color: var(--text-color);
-      }
-    }
-
-    /* Messenger Splash screen */
-    .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-    .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > div > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div,
-    .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .x1dr59a3.xh8yej3 > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xvbhtw8 > div,
-    .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .x1dr59a3.xh8yej3 > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div {
-      background-color: var(--dark) !important;
-    }
-
-
-    /* Dialog */
-    ._a9-z,
-    ._ac76 {
-      background-color: var(--darker);
-      border-bottom: 1px solid var(--border-color);
-
-      button {
-        border-top: 1px solid var(--border-color);
-
-        &:is(._a9_1),
-        span {
-          color: var(--text-color);
-        }
-
-        &:hover {
-          background-color: var(--dark);
-        }
-      }
-    }
-
-    /* Dialog - Create new post */
-    .x1n2onr6.xzkaem6 > .x9f619.x1n2onr6.x1ja2u2z > div > .x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div > div > div > div > div > .xdl72j9.x1iyjqo2.xs83m0k.x15wfb8v.x3aagtl.xqbdwvv.x6ql1ns.x1cwzgcd > .x6s0dn4.x78zum5.x5yr21d.xl56j7k.x1n2onr6.xh8yej3 > div > div,
-    .x15wfb8v.x3aagtl.x6ql1ns.x78zum5.xdl72j9.x1iyjqo2.xs83m0k.x13vbajr.x1ue5u6n > .xhk4uv.x26u7qi.xy80clv.x9f619.x78zum5.x1n2onr6.x1f4304s > div > div {
-      background-color: var(--darker);
-    }
-
-    /* Dialog - Share post */
-    .x7r02ix[role="dialog"] {
-      background-color: var(--darker);
-    }
-
-    /* Emoji picker */
-    .xu96u03.xm80bdy.x10l6tqk.x13vifvy > div > div > div > div > div > div {
-      background-color: var(--dark);
-    }
-
-    /* Footer */
-    footer {
-      background-color: var(--darker) !important;
-    }
-  }
-
-  lightStyling() {
-    /* Main Page - Stories */
-    main > .x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > .xmnaoh6 > div > div {
-      background: #fafafa;
-      box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
-    }
-
-    /* Cards */
-    ._aac6,
-    ._ab6k,
-    ._aak3,
-    ._aakb ._aakc,
-    .xw7yly9 > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > article > div,
-    .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div > div > div > .xvbhtw8.x13zqm9e.xnc8uc2.x11aubdm {
-      background: #fafafa;
-      border: 1px solid var(--border-light-color);
-      box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
-    }
-
-    /* Suggested for you */
-    main > .x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > .x1dr59a3.x13vifvy.x3hkoc4.x6bx242 > div > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1e56ztr.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div {
-      background: #fafafa;
-      box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
-    }
-
-    /* Sidebar */
-    .x1xgvd2v {
-      background: #fafafa;
-      border-right: 1px solid var(--border-light-color);
-    }
-
-    /* Post */
-    article {
-
-      & > div {
-        background-color: #fafafa;
-        box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
-      }
-
-      & > div > .xsag5q8.x1e558r4 {
-        background-color: #fafafa;
-      }
-
-      & > div > .x1lliihq.x1n2onr6 > div {
-        background-color: #fafafa;
-      }
-
-      form._aidk._aidl._aie4._ak6u {
-        outline: 1px solid #ededed;
-      }
-    }
-
-    .x9f619.x1n2onr6.x1ja2u2z > div > div > .x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > .x9f619.xvbhtw8.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib > .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x17snn68.x6osk4m.x1porb0y > section > main > div:nth-child(1) > section > ._aam1._amtu._akej._amtv._aam2._akmr > .x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div > div:nth-child(1) > div > article > div {
-      outline: 1px solid #ededed;
-    }
-
-    /* Messenger */
-    .x1gryazu.xh8yej3.x10o80wk.x14k21rp.x1v4esvl > section > div > div > div > .xjp7ctv > div > .x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x193iq5w.xeuugli.x1r8uery.x1iyjqo2.xs83m0k > div > div > div > div > div {
-      background-color: #fafafa;
-
-      & > .x1vjfegm {
-        background-color: #fafafa;
-      }
-
-      & > .x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div:nth-child(2) {
-        background-color: #fafafa;
-
-        & > div {
-          background: #fff;
-          outline: 1px solid #dfdfdf;
-        }
-      }
-    }
-  }
-
-  /* Conditions */
-  if theme==dark {
-    darkStyling();
-  }
-  else if theme==light {
-    lightStyling();
-  }
-  else if theme==system {
-    @media (prefers-color-scheme: dark) {
-      darkStyling();
-    }
-
-    @media (prefers-color-scheme: light) {
-      lightStyling();
-    }
-  }
+	main > div > div:nth-child(1) > div > div > div {
+		width: 100%;
+	}
+
+	article > div > div.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.x6usi7g.x1bs97v6.x18dxpii.xjwep3j.x1t39747.x1wcsgtt.x1pczhz8.x13fuv20.x18b5jzi.x1q0q8m5.x1t7ytsu.x178xt8z.x1lun4ml.xso031l.xpilrb4 > div:nth-child(1) > div > div,
+	article > div > div.x6s0dn4.xyzq4qe.x78zum5.xdt5ytf.x2lah0s.xl56j7k.x6ikm8r.x10wlt62.x1n2onr6.x5ur3kl.x6usi7g.x1bs97v6.x18dxpii.xjwep3j.x1t39747.x1wcsgtt.x1pczhz8.x13fuv20.x18b5jzi.x1q0q8m5.x1t7ytsu.x178xt8z.x1lun4ml.xso031l.xpilrb4 > div:nth-child(1) > div > div > div.x1iyjqo2 > div > div.x1lliihq.x1n2onr6 > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x10l6tqk.x1ey2m1c.x13vifvy.x1o0tod.xtijo5x.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div > div > div > ul > li > div {
+		width: calc(-2px + min(630px, 100vw)) !important;
+	}
+
+	article > div > div.xsag5q8.x135b78x {
+		padding: 1rem;
+	}
+
+	article > div > div.x1lliihq.x1n2onr6 > div:nth-child(1) {
+		padding: 0 1rem 1rem 1rem;
+	}
+
+	form {
+		border-radius: 8px !important;
+
+		textarea {
+			padding: 1rem !important;
+		}
+	}
+
+
+	/* The "Like" button */
+	svg {
+		&:is([aria-label="Like"]) {
+			fill: #ed4956 !important;
+		}
+
+		&:is([aria-label="Unlike"]) {
+			filter: drop-shadow(0 0 10px #ed4956) !important;
+		}
+	}
+
+	if (animationToggle) {
+		.x14vhib7 {
+			animation: pulse-highlight-red 2s infinite;
+		}
+
+		article,
+		a._a6hd,
+		._aagv {
+			animation: fadeIn 300ms linear;
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes pulse-highlight-red {
+			0% {
+				box-shadow: 0 0 0 0 rgba(255, 48, 64, 0.4)
+			}
+
+			70% {
+				box-shadow: 0 0 0 10px transparent
+			}
+
+			100% {
+				box-shadow: 0 0 0 0 transparent
+			}
+		}
+	}
+
+	div.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div {
+		backdrop-filter: blur(2px);
+	}
+
+	lightStyling() {
+		div > div > div.x9f619.x1n2onr6.x1ja2u2z > div > div > div.x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.x1f5funs.xvbhtw8.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.xixxii4.x13vifvy.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1.x1dr59a3.xeq5yr9.x1n327nk > div > div > div > div {
+			background-color: #fafafa;
+		}
+
+		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > article > div > div.xsag5q8.x135b78x,
+		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > article > div > div.x1lliihq.x1n2onr6 > div:nth-child(1) {
+			background-color: #fafafa;
+		}
+
+		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > article > div > div.x1lliihq.x1n2onr6 {
+			box-shadow: rgba(140, 149, 159, 0.15) 0px 3px 6px 0px;
+		}
+	}
+
+	darkStyling() {
+		:root {
+			--ig-primary-background: 33, 33, 33;
+		}
+
+		div > div > div.x9f619.x1n2onr6.x1ja2u2z > div > div > div.x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.x1f5funs.xvbhtw8.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.x1q0g3np.xqjyukv.x1qjc9v5.x1oa3qoh.x1qughib > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.xixxii4.x13vifvy.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1.x1dr59a3.xeq5yr9.x1n327nk > div > div > div > div {
+			background-color: #111;
+		}
+
+		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > article > div > div.xsag5q8.x135b78x,
+		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > article > div > div.x1lliihq.x1n2onr6 > div:nth-child(1) {
+			background-color: #111;
+		}
+
+		main > div.x1qjc9v5.x78zum5.x1q0g3np.xl56j7k.xh8yej3 > div:nth-child(1) > div > div.html-div.xdj266r.x14z9mp.xat24cr.x1lziwak.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x6s0dn4.x1oa3qoh.x1nhvcw1 > div > div:nth-child(1) > div > article > div > div.x1lliihq.x1n2onr6 {
+			box-shadow: rgb(17, 17, 17) 0px 3px 6px 0px;
+		}
+	}
+
+	/* Conditions */
+	if theme==dark {
+		darkStyling();
+	}
+	else if theme==light {
+		lightStyling();
+	}
+	else if theme==system {
+		@media (prefers-color-scheme: dark) {
+			darkStyling();
+		}
+
+		@media (prefers-color-scheme: light) {
+			lightStyling();
+		}
+	}
 }
